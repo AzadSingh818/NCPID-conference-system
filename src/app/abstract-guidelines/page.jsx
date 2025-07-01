@@ -35,7 +35,7 @@ export default function AbstractGuidelines() {
                 Abstract Submission Guidelines
               </h1>
               <p className="text-lg text-gray-600">
-                APBMT 2025 - Pediatric Infectious Diseases Conference
+                NCPID 2025 - National Conference on Pediatric Infectious Diseases
               </p>
             </div>
             
@@ -71,7 +71,7 @@ export default function AbstractGuidelines() {
           
           <div className="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-400 p-4 mb-8">
             <p className="text-red-800 font-semibold text-lg">
-              FOR FREE PAPER AND POSTER PRESENTATIONS - PEDIATRIC INFECTIOUS DISEASES
+              FOR AWARD PAPER, FREE PAPER AND POSTER PRESENTATIONS - PEDIATRIC INFECTIOUS DISEASES
             </p>
             <p className="text-red-600 text-sm mt-1">
               This should be visible on the abstract submission page
@@ -113,8 +113,11 @@ export default function AbstractGuidelines() {
                 <div className="flex items-start p-4 bg-red-50 rounded-lg">
                   <Clock className="h-5 w-5 text-red-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-red-800">Word Limit</p>
-                    <p className="text-red-700 font-medium">Not more than <strong>250 words</strong></p>
+                    <p className="font-semibold text-red-800">Word Limits</p>
+                    <p className="text-red-700 text-sm">
+                      <strong>Award Paper:</strong> Maximum 1000 words<br/>
+                      <strong>Free Paper/Poster:</strong> Maximum 250 words
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start p-4 bg-purple-50 rounded-lg">
@@ -129,7 +132,32 @@ export default function AbstractGuidelines() {
 
             {/* Right Column - Specifications */}
             <div className="space-y-6">
-              <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Additional Requirements</h3>
+              <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Presentation Categories</h3>
+              
+              <div className="bg-yellow-50 p-6 rounded-lg">
+                <h4 className="font-semibold text-yellow-800 mb-4 flex items-center">
+                  <Award className="h-4 w-4 mr-2" />
+                  Award Paper Category
+                </h4>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-2 bg-white rounded">
+                    <span className="text-sm font-medium">Word Limit:</span>
+                    <span className="font-bold text-yellow-700">1000 words maximum</span>
+                  </div>
+                  <div className="flex justify-between items-center p-2 bg-white rounded">
+                    <span className="text-sm font-medium">Submission:</span>
+                    <span className="font-bold text-yellow-700">Full paper + Abstract</span>
+                  </div>
+                  <div className="flex justify-between items-center p-2 bg-white rounded">
+                    <span className="text-sm font-medium">Format:</span>
+                    <span className="font-bold text-yellow-700">Indian Pediatrics Original Article</span>
+                  </div>
+                  <div className="p-2 bg-white rounded">
+                    <span className="text-sm font-medium text-yellow-800">Awards:</span>
+                    <span className="text-sm text-yellow-700 ml-2">Top 3 papers get oral presentation opportunity</span>
+                  </div>
+                </div>
+              </div>
               
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-4 flex items-center">
@@ -181,7 +209,18 @@ export default function AbstractGuidelines() {
               <Award className="h-5 w-5 mr-2" />
               Key Guidelines Summary
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-4 rounded">
+                <h4 className="font-medium text-yellow-700 mb-3">Award Paper Category:</h4>
+                <ul className="list-disc list-inside text-sm text-yellow-800 space-y-1">
+                  <li>Related to Pediatric infectious diseases & maximum 1000 words</li>
+                  <li>Presenting person should be primary author/co-author</li>
+                  <li>Full paper and abstract should be submitted</li>
+                  <li>Paper should be in Indian Pediatrics Original Article Format</li>
+                  <li>Top 3 best papers get oral presentation opportunity</li>
+                  <li>Papers not chosen may be considered for Free Paper/Poster</li>
+                </ul>
+              </div>
               <div className="bg-white p-4 rounded">
                 <h4 className="font-medium text-yellow-700 mb-3">Free Paper Presentation:</h4>
                 <ul className="list-disc list-inside text-sm text-yellow-800 space-y-1">
@@ -198,6 +237,50 @@ export default function AbstractGuidelines() {
                   <li>Poster preparation guidelines will be provided after acceptance</li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          {/* Award Paper Specific Guidelines */}
+          <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 mb-8">
+            <h3 className="font-semibold text-orange-800 mb-6 flex items-center">
+              <Award className="h-5 w-5 mr-2" />
+              Award Paper Category - Special Instructions
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-4 rounded-lg">
+                <div className="flex items-center mb-3">
+                  <FileText className="h-4 w-4 text-orange-600 mr-2" />
+                  <h4 className="font-medium text-orange-800">Submission Requirements</h4>
+                </div>
+                <ul className="text-sm text-orange-700 space-y-1">
+                  <li>• <strong>Word Limit:</strong> Maximum 1000 words</li>
+                  <li>• <strong>Format:</strong> Indian Pediatrics Original Article Format</li>
+                  <li>• <strong>Documents:</strong> Full paper + Abstract both required</li>
+                  <li>• <strong>Topic:</strong> Pediatric Infectious Diseases</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-4 rounded-lg">
+                <div className="flex items-center mb-3">
+                  <Eye className="h-4 w-4 text-orange-600 mr-2" />
+                  <h4 className="font-medium text-orange-800">Evaluation Process</h4>
+                </div>
+                <ul className="text-sm text-orange-700 space-y-1">
+                  <li>• Initially judged for <strong>content and methodology</strong></li>
+                  <li>• <strong>Top 3 best papers</strong> selected for oral presentation</li>
+                  <li>• Award decision based on paper + presentation credits</li>
+                  <li>• Non-selected papers considered for Free Paper/Poster</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-orange-100 border border-orange-300 rounded-lg">
+              <h4 className="font-semibold text-orange-800 mb-2">Important Note for Award Paper:</h4>
+              <p className="text-sm text-orange-700">
+                <strong>Paper not chosen for presentation will be automatically considered for Free Paper / Poster Presentation.</strong> 
+                This ensures all quality submissions get an opportunity for presentation at the conference.
+              </p>
             </div>
           </div>
 
@@ -291,17 +374,34 @@ export default function AbstractGuidelines() {
           {/* Important Notes */}
           <div className="bg-red-100 border border-red-300 p-6 rounded-lg mb-8">
             <h3 className="font-semibold text-red-800 mb-4">⚠️ Critical Requirements</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ul className="text-sm text-red-700 space-y-2">
-                <li>• <strong>Topic:</strong> Must be related to Pediatric Infectious Diseases</li>
-                <li>• <strong>Font:</strong> ARIAL font, size 12 points only</li>
-                <li>• <strong>Word Limit:</strong> Maximum 250 words (strictly enforced)</li>
-              </ul>
-              <ul className="text-sm text-red-700 space-y-2">
-                <li>• <strong>Presenter:</strong> Must be primary author or co-author</li>
-                <li>• <strong>Poster Guidelines:</strong> Will be provided after acceptance</li>
-                <li>• <strong>Submission:</strong> Online submission only</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <h4 className="font-semibold text-red-800 mb-2">Award Paper Category:</h4>
+                <ul className="text-sm text-red-700 space-y-1">
+                  <li>• <strong>Topic:</strong> Pediatric Infectious Diseases</li>
+                  <li>• <strong>Word Limit:</strong> Maximum 1000 words</li>
+                  <li>• <strong>Submission:</strong> Full paper + Abstract</li>
+                  <li>• <strong>Format:</strong> Indian Pediatrics Original Article</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-red-800 mb-2">Free Paper Category:</h4>
+                <ul className="text-sm text-red-700 space-y-1">
+                  <li>• <strong>Topic:</strong> Pediatric Infectious Diseases</li>
+                  <li>• <strong>Font:</strong> ARIAL font, size 12 points only</li>
+                  <li>• <strong>Word Limit:</strong> Maximum 250 words</li>
+                  <li>• <strong>Presenter:</strong> Primary author or co-author</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-red-800 mb-2">Poster Presentation:</h4>
+                <ul className="text-sm text-red-700 space-y-1">
+                  <li>• <strong>Font:</strong> ARIAL font, size 12 points</li>
+                  <li>• <strong>Word Limit:</strong> Maximum 250 words</li>
+                  <li>• <strong>Presenter:</strong> Primary author or co-author</li>
+                  <li>• <strong>Guidelines:</strong> Provided after acceptance</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -309,12 +409,16 @@ export default function AbstractGuidelines() {
           <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg mb-8">
             <h3 className="font-semibold text-blue-800 mb-4 flex items-center">
               <Download className="h-5 w-5 mr-2" />
-              Sample Abstract Format
+              Sample Abstract & Paper Formats
             </h3>
             <p className="text-blue-700 mb-4">
-              Download sample abstract format for Pediatric Infectious Diseases presentations:
+              Download sample formats for Pediatric Infectious Diseases presentations:
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
+              <button className="inline-flex items-center px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors">
+                <Download className="h-4 w-4 mr-2" />
+                Download Award Paper Format
+              </button>
               <button className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                 <Download className="h-4 w-4 mr-2" />
                 Download Free Paper Format
@@ -324,6 +428,9 @@ export default function AbstractGuidelines() {
                 Download Poster Format
               </button>
             </div>
+            <p className="text-blue-600 text-sm mt-3">
+              <strong>Award Paper Note:</strong> Use Indian Pediatrics Original Article Format for full paper submission
+            </p>
           </div>
         </div>
 
@@ -334,13 +441,14 @@ export default function AbstractGuidelines() {
               Ready to Submit Your Abstract?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Please ensure your abstract is related to <strong>Pediatric Infectious Diseases</strong> and follows all formatting guidelines (ARIAL font, size 12, maximum 250 words).
+              Choose from <strong>Award Paper Category</strong> (1000 words + full paper), <strong>Free Paper</strong> (250 words), or <strong>Poster Presentation</strong> (250 words). 
+              All submissions must be related to <strong>Pediatric Infectious Diseases</strong>.
             </p>
             
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
               <p className="text-yellow-800 text-sm">
                 <strong>Before proceeding:</strong> Confirm that you are the primary author or co-author of the work. 
-                Make sure your abstract uses ARIAL font, size 12, and is within 250 words limit.
+                For Award Paper: prepare full paper in Indian Pediatrics format. For Free Paper/Poster: use ARIAL font, size 12, within 250 words.
               </p>
             </div>
             
@@ -365,8 +473,8 @@ export default function AbstractGuidelines() {
             <strong>Note:</strong> Guidelines are dynamic and may change from conference to conference
           </p>
           <p className="text-xs mt-2">
-            © APBMT 2025 - Pediatric Infectious Diseases Conference | 
-            For queries: <a href="mailto:abstracts@apbmt2025.org" className="text-blue-600 hover:underline">abstracts@apbmt2025.org</a>
+            © NCPID 2025 - National Conference on Pediatric Infectious Diseases | 
+            For queries: <a href="mailto:abstracts@ncpid2025.org" className="text-blue-600 hover:underline">abstracts@ncpid2025.org</a>
           </p>
         </div>
       </div>
