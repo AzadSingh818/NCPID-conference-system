@@ -35,7 +35,7 @@ export default function AbstractGuidelines() {
                 Abstract Submission Guidelines
               </h1>
               <p className="text-lg text-gray-600">
-                APBMT 2025 - Asia-Pacific Blood and Marrow Transplantation Conference
+                APBMT 2025 - Pediatric Infectious Diseases Conference
               </p>
             </div>
             
@@ -71,7 +71,7 @@ export default function AbstractGuidelines() {
           
           <div className="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-400 p-4 mb-8">
             <p className="text-red-800 font-semibold text-lg">
-              FOR FREE ORAL PAPER AND POSTER PRESENTATIONS
+              FOR FREE PAPER AND POSTER PRESENTATIONS - PEDIATRIC INFECTIOUS DISEASES
             </p>
             <p className="text-red-600 text-sm mt-1">
               This should be visible on the abstract submission page
@@ -89,27 +89,34 @@ export default function AbstractGuidelines() {
                 <div className="flex items-start p-4 bg-blue-50 rounded-lg">
                   <Users className="h-5 w-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-blue-800">Prior Registration Mandatory</p>
-                    <p className="text-blue-700 text-sm">Conference registration is required for presentation</p>
+                    <p className="font-semibold text-blue-800">Topic Requirement</p>
+                    <p className="text-blue-700 text-sm">Paper should be related to <strong>Pediatric Infectious Diseases</strong></p>
                   </div>
                 </div>
 
                 <div className="flex items-start p-4 bg-green-50 rounded-lg">
                   <FileText className="h-5 w-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-green-800">Online Submission Only</p>
-                    <p className="text-green-700 text-sm">Submit to conference website only. Include presenter details with abstract.</p>
+                    <p className="font-semibold text-green-800">Presenter Requirement</p>
+                    <p className="text-green-700 text-sm">Presenting person should be the <strong>primary author/co-author</strong></p>
+                  </div>
+                </div>
+
+                <div className="flex items-start p-4 bg-purple-50 rounded-lg">
+                  <Type className="h-5 w-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-purple-800">Font Requirements</p>
+                    <p className="text-purple-700 text-sm">Abstract should be printed using <strong>ARIAL font</strong> with <strong>font size 12</strong></p>
                   </div>
                 </div>
 
                 <div className="flex items-start p-4 bg-red-50 rounded-lg">
                   <Clock className="h-5 w-5 text-red-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-red-800">Submission Deadline</p>
-                    <p className="text-red-700 font-medium">Extended to 10th July 2025</p>
+                    <p className="font-semibold text-red-800">Word Limit</p>
+                    <p className="text-red-700 font-medium">Not more than <strong>250 words</strong></p>
                   </div>
                 </div>
-
                 <div className="flex items-start p-4 bg-purple-50 rounded-lg">
                   <Shield className="h-5 w-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
@@ -120,139 +127,126 @@ export default function AbstractGuidelines() {
               </div>
             </div>
 
-            {/* Right Column - Word Limits & Time Allocation */}
+            {/* Right Column - Specifications */}
             <div className="space-y-6">
-              <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Specifications</h3>
+              <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Additional Requirements</h3>
               
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-4 flex items-center">
                   <FileText className="h-4 w-4 mr-2" />
-                  Word Limits
+                  Free Paper Category
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Oral Paper:</span>
-                    <span className="font-bold text-blue-700">300 words</span>
+                    <span className="text-sm font-medium">Word Limit:</span>
+                    <span className="font-bold text-blue-700">250 words</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Poster Presentation:</span>
-                    <span className="font-bold text-blue-700">300 words</span>
+                    <span className="text-sm font-medium">Font:</span>
+                    <span className="font-bold text-blue-700">ARIAL, Size 12</span>
                   </div>
-                  {/* <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Poster:</span>
-                    <span className="font-bold text-blue-700">300 words</span>
-                  </div> */}
+                  <div className="flex justify-between items-center p-2 bg-white rounded">
+                    <span className="text-sm font-medium">Topic:</span>
+                    <span className="font-bold text-blue-700">Pediatric Infectious Diseases</span>
+                  </div>
                 </div>
               </div>
 
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-semibold text-green-800 mb-4 flex items-center">
-                  <Clock className="h-4 w-4 mr-2" />
-                  Time Allocation
+                  <Image className="h-4 w-4 mr-2" />
+                  Poster Presentation
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Oral Paper:</span>
-                    <span className="font-bold text-green-700">6 min + 2 min discussion</span>
+                    <span className="text-sm font-medium">Word Limit:</span>
+                    <span className="font-bold text-green-700">250 words</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Poster:</span>
-                    <span className="font-bold text-green-700">5 min + 2 min discussion</span>
+                    <span className="text-sm font-medium">Font:</span>
+                    <span className="font-bold text-green-700">ARIAL, Size 12</span>
+                  </div>
+                  <div className="p-2 bg-white rounded">
+                    <span className="text-sm font-medium text-green-800">Note:</span>
+                    <span className="text-sm text-green-700 ml-2">Further guidelines on preparing the poster will be intimated once the poster is accepted</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Abstract Structure Requirements */}
+          {/* Important Guidelines */}
           <div className="bg-yellow-50 p-6 rounded-lg mb-8">
             <h3 className="font-semibold text-yellow-800 mb-4 flex items-center">
               <Award className="h-5 w-5 mr-2" />
-              Required Abstract Structure
+              Key Guidelines Summary
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-4 rounded">
-                <h4 className="font-medium text-yellow-700 mb-3">For Original Study (Paper/Poster):</h4>
-                <ol className="list-decimal list-inside text-sm text-yellow-800 space-y-1">
-                  <li>Background</li>
-                  <li>Methodology</li>
-                  <li>Results</li>
-                  <li>Conclusion</li>
-                </ol>
+                <h4 className="font-medium text-yellow-700 mb-3">Free Paper Presentation:</h4>
+                <ul className="list-disc list-inside text-sm text-yellow-800 space-y-1">
+                  <li>Paper should be related to Pediatric infectious diseases</li>
+                  <li>Presenting person should be the primary author/co-author</li>
+                  <li>ARIAL font, size 12, maximum 250 words</li>
+                </ul>
               </div>
-              {/* <div className="bg-white p-4 rounded">
-                <h4 className="font-medium text-yellow-700 mb-3">For Case Report (Poster):</h4>
-                <ol className="list-decimal list-inside text-sm text-yellow-800 space-y-1">
-                  <li>Background</li>
-                  <li>Case Report</li>
-                  <li>Conclusion</li>
-                </ol>
-              </div> */}
+              <div className="bg-white p-4 rounded">
+                <h4 className="font-medium text-yellow-700 mb-3">Poster Presentation:</h4>
+                <ul className="list-disc list-inside text-sm text-yellow-800 space-y-1">
+                  <li>Presenting person should be the primary author/co-author</li>
+                  <li>ARIAL font, size 12, maximum 250 words</li>
+                  <li>Poster preparation guidelines will be provided after acceptance</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          {/* E-Poster Specific Guidelines */}
+          {/* Formatting Requirements */}
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-8">
-            {/* <h3 className="font-semibold text-purple-800 mb-6 flex items-center">
-              <Monitor className="h-5 w-5 mr-2" />
-              Instructions for E-Poster Presentation
-            </h3> */}
+            <h3 className="font-semibold text-purple-800 mb-6 flex items-center">
+              <Type className="h-5 w-5 mr-2" />
+              Formatting Requirements
+            </h3>
             
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-4 rounded-lg">
-                <div className="flex items-center mb-3">
-                  <Image className="h-4 w-4 text-purple-600 mr-2" />
-                  <h4 className="font-medium text-purple-800">Format & Layout</h4>
-                </div>
-                <ul className="text-sm text-purple-700 space-y-1">
-                  <li>• Create only ONE slide image</li>
-                  <li>• Landscape layout (16:9)</li>
-                  <li>• PowerPoint format</li>
-                  <li>• Save as JPG image format</li>
-                </ul>
-              </div>
-
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-4 rounded-lg">
                 <div className="flex items-center mb-3">
                   <Type className="h-4 w-4 text-purple-600 mr-2" />
-                  <h4 className="font-medium text-purple-800">Typography</h4>
+                  <h4 className="font-medium text-purple-800">Font Specifications</h4>
                 </div>
                 <ul className="text-sm text-purple-700 space-y-1">
-                  <li>• Font: Arial or Calibri only</li>
-                  <li>• Font size: ≥11 points</li>
-                  <li>• Avoid light colors</li>
-                  <li>• Ensure readability</li>
+                  <li>• Font Family: <strong>ARIAL only</strong></li>
+                  <li>• Font Size: <strong>12 points</strong></li>
+                  <li>• Ensure text readability</li>
+                  <li>• Maintain consistency</li>
                 </ul>
               </div>
 
               <div className="bg-white p-4 rounded-lg">
                 <div className="flex items-center mb-3">
-                  <Zap className="h-4 w-4 text-purple-600 mr-2" />
-                  <h4 className="font-medium text-purple-800">Technical Specs</h4>
+                  <FileText className="h-4 w-4 text-purple-600 mr-2" />
+                  <h4 className="font-medium text-purple-800">Word Count</h4>
                 </div>
                 <ul className="text-sm text-purple-700 space-y-1">
-                  <li>• Images: ≥200 DPI</li>
-                  <li>• File size: ≤5 MB</li>
-                  <li>• No animations/GIFs</li>
-                  <li>• No embedded videos</li>
+                  <li>• Maximum: <strong>250 words</strong></li>
+                  <li>• Count includes all text</li>
+                  <li>• Strictly enforced limit</li>
+                  <li>• Check before submission</li>
                 </ul>
               </div>
-            </div> */}
-            
-            <div className="mt-6 p-4 bg-purple-100 border border-purple-300 rounded-lg">
-              <h4 className="font-semibold text-purple-800 mb-2">Prohibited Elements:</h4>
-              <p className="text-sm text-purple-700">
-                <strong>Do NOT include:</strong> Hyperlinks, Animated Images, Animations, GIFs, 
-                Embedded Documents, Videos. Use e-poster template provided on website.
-              </p>
-            </div>
 
-            <div className="mt-4 p-4 bg-white border border-purple-200 rounded-lg">
-              <h4 className="font-semibold text-purple-800 mb-2">File Naming:</h4>
-              <p className="text-sm text-purple-700">
-                Avoid symbols or special characters (e.g., +@/) while naming the file. 
-                Use simple names like: <code className="bg-gray-100 px-2 py-1 rounded">AbstractTitle_AuthorName.jpg</code>
-              </p>
+              <div className="bg-white p-4 rounded-lg">
+                <div className="flex items-center mb-3">
+                  <Users className="h-4 w-4 text-purple-600 mr-2" />
+                  <h4 className="font-medium text-purple-800">Author Requirements</h4>
+                </div>
+                <ul className="text-sm text-purple-700 space-y-1">
+                  <li>• Primary author presents</li>
+                  <li>• Co-author can present</li>
+                  <li>• Clear author identification</li>
+                  <li>• Contact details required</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -266,15 +260,15 @@ export default function AbstractGuidelines() {
               <div className="space-y-3">
                 <div className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-1" />
-                  <p className="text-sm text-gray-700">APBMT Scientific Committee will review all abstracts</p>
+                  <p className="text-sm text-gray-700">Scientific Committee will review all abstracts</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-1" />
+                  <p className="text-sm text-gray-700">Focus on Pediatric Infectious Diseases relevance</p>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-1" />
                   <p className="text-sm text-gray-700">Acceptance will be communicated to presenter</p>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-1" />
-                  <p className="text-sm text-gray-700">Selection is at sole discretion of Scientific Committee</p>
                 </div>
               </div>
               <div className="space-y-3">
@@ -282,13 +276,13 @@ export default function AbstractGuidelines() {
                   <CheckCircle className="h-4 w-4 text-blue-500 mr-2 mt-1" />
                   <p className="text-sm text-gray-700">Committee may change presentation type after review</p>
                 </div>
-                {/* <div className="flex items-start">
+                <div className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-blue-500 mr-2 mt-1" />
-                  <p className="text-sm text-gray-700">Abstract may be considered for free paper or e-poster</p>
-                </div> */}
+                  <p className="text-sm text-gray-700">Formatting compliance will be checked</p>
+                </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-red-500 mr-2 mt-1" />
-                  <p className="text-sm text-gray-700"><strong>Spot registrations NOT allowed for presenters</strong></p>
+                  <p className="text-sm text-gray-700"><strong>Author/Co-author must be the presenter</strong></p>
                 </div>
               </div>
             </div>
@@ -296,17 +290,17 @@ export default function AbstractGuidelines() {
 
           {/* Important Notes */}
           <div className="bg-red-100 border border-red-300 p-6 rounded-lg mb-8">
-            <h3 className="font-semibold text-red-800 mb-4">⚠️ Important Reminders</h3>
+            <h3 className="font-semibold text-red-800 mb-4">⚠️ Critical Requirements</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="text-sm text-red-700 space-y-2">
-                <li>• Guidelines are dynamic and may change from conference to conference</li>
-                <li>• Ensure all presenter details are mentioned along with abstract</li>
-                <li>• Conference registration is mandatory for participation</li>
+                <li>• <strong>Topic:</strong> Must be related to Pediatric Infectious Diseases</li>
+                <li>• <strong>Font:</strong> ARIAL font, size 12 points only</li>
+                <li>• <strong>Word Limit:</strong> Maximum 250 words (strictly enforced)</li>
               </ul>
               <ul className="text-sm text-red-700 space-y-2">
-                <li>• Follow word limits strictly for successful submission</li>
-                <li>• Use only approved file formats for uploads</li>
-                <li>• Submit before deadline - no extensions after July 10, 2025</li>
+                <li>• <strong>Presenter:</strong> Must be primary author or co-author</li>
+                <li>• <strong>Poster Guidelines:</strong> Will be provided after acceptance</li>
+                <li>• <strong>Submission:</strong> Online submission only</li>
               </ul>
             </div>
           </div>
@@ -318,17 +312,17 @@ export default function AbstractGuidelines() {
               Sample Abstract Format
             </h3>
             <p className="text-blue-700 mb-4">
-              Download sample abstract format for reference before submission:
+              Download sample abstract format for Pediatric Infectious Diseases presentations:
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <button className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                 <Download className="h-4 w-4 mr-2" />
-                Download Sample Format
+                Download Free Paper Format
               </button>
-              {/* <button className="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+              <button className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
                 <Download className="h-4 w-4 mr-2" />
-                Download E-Poster Template
-              </button> */}
+                Download Poster Format
+              </button>
             </div>
           </div>
         </div>
@@ -340,14 +334,13 @@ export default function AbstractGuidelines() {
               Ready to Submit Your Abstract?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Please ensure you have read and understood all guidelines above. 
-              You must be registered for the conference to proceed with abstract submission.
+              Please ensure your abstract is related to <strong>Pediatric Infectious Diseases</strong> and follows all formatting guidelines (ARIAL font, size 12, maximum 250 words).
             </p>
             
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
               <p className="text-yellow-800 text-sm">
-                <strong>Before proceeding:</strong> Make sure you have your conference registration credentials ready. 
-                If not registered yet, you can register first and then submit your abstract.
+                <strong>Before proceeding:</strong> Confirm that you are the primary author or co-author of the work. 
+                Make sure your abstract uses ARIAL font, size 12, and is within 250 words limit.
               </p>
             </div>
             
@@ -372,7 +365,7 @@ export default function AbstractGuidelines() {
             <strong>Note:</strong> Guidelines are dynamic and may change from conference to conference
           </p>
           <p className="text-xs mt-2">
-            © APBMT 2025 - Asia-Pacific Blood and Marrow Transplantation Conference | 
+            © APBMT 2025 - Pediatric Infectious Diseases Conference | 
             For queries: <a href="mailto:abstracts@apbmt2025.org" className="text-blue-600 hover:underline">abstracts@apbmt2025.org</a>
           </p>
         </div>
