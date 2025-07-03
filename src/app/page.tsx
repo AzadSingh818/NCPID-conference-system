@@ -32,10 +32,10 @@ export default function APBMTHomepage() {
   ];
 
   const importantDates = [
-    { event: 'Abstract Submission Deadline', date: 'July 10, 2025', status: 'extended', color: 'red' },
+    { event: 'Abstract Submission Deadline', date: 'July 7th, 2025', status: 'extended', color: 'red' },
     { event: 'Early Bird Registration', date: 'August 15, 2025', status: 'open', color: 'green' },
-    { event: 'Final Registration', date: 'February 15, 2025', status: 'upcoming', color: 'blue' },
-    { event: 'Conference Dates', date: 'March 15-17, 2025', status: 'confirmed', color: 'purple' }
+    { event: 'Final Registration', date: 'July 7th, 2025', status: 'upcoming', color: 'blue' },
+    { event: 'Conference Dates', date: '10th to 12th October, 2025', status: 'confirmed', color: 'purple' }
   ];
 
   const abstractCategories = [
