@@ -39,13 +39,13 @@ export default function APBMTHomepage() {
   ];
 
   const abstractCategories = [
-    // { 
-    //   title: 'Free Paper Presentation', 
-    //   duration: '6+2 minutes', 
-    //   wordLimit: '250 words',
-    //   icon: Microscope,
-    //   description: 'Original research presentations with discussion'
-    // },
+    { 
+      title: 'Free Paper Presentation', 
+      duration: '6+2 minutes', 
+      wordLimit: '1000 words',
+      icon: Microscope,
+      description: 'Original research presentations with discussion'
+    },
     { 
       title: 'Poster Presentation', 
       duration: 'Display', 
@@ -53,13 +53,13 @@ export default function APBMTHomepage() {
       icon: FileText,
       description: 'Visual presentation of research findings'
     },
-    { 
-      title: 'E-Poster Presentation', 
-      duration: '5+2 minutes', 
-      wordLimit: '200 words',
-      icon: Activity,
-      description: 'Electronic poster with presentation slot'
-    },
+    // { 
+    //   title: 'E-Poster Presentation', 
+    //   duration: '5+2 minutes', 
+    //   wordLimit: '200 words',
+    //   icon: Activity,
+    //   description: 'Electronic poster with presentation slot'
+    // },
     { 
       title: 'Award Paper', 
       duration: '8+2 minutes', 
