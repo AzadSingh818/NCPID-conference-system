@@ -162,7 +162,7 @@ export default function APBMTHomepage() {
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
             HOSTED BY - PEDIATRIC INFECTIOUS DISEASES ACADEMY [PIDA]
-            CO-HOSTS-IAP-ID KARNATAKA CHAPTER, IAP BENGALURU
+              CO-HOSTS-IAP-ID KARNATAKA CHAPTER, IAP BENGALURU
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
