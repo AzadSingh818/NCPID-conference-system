@@ -419,7 +419,7 @@ export default function APBMTHomepage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; National Conference Of Pediatric Infectious Diseases. All rights reserved.</p>
+            <p>&copy; 2025 National Conference Of Pediatric Infectious Diseases. All rights reserved.</p>
             {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
