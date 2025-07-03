@@ -341,9 +341,9 @@ export default function APBMTHomepage() {
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Join APBMT 2025?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Join NCPID 2025?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Submit your research abstract and be part of the premier pediatric BMT conference
+            National Conference Of Pediatric Infectious Diseases
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
