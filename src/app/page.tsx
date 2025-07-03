@@ -139,14 +139,14 @@ export default function APBMTHomepage() {
       {/* Hero Section with NCPID Banner */}
       <section className="bg-white">
         {/* NCPID Banner Image */}
-        <div className="w-full">
+        {/* <div className="w-full">
           <img 
             src="/ncpid-2025-banner.jpg" 
             alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
             className="w-full h-auto object-cover"
             style={{ maxHeight: '0px' }}
           />
-        </div>
+        </div> */}
         
         {/* Content Below Banner */}
         <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-12">
