@@ -87,7 +87,7 @@ export default function APBMTHomepage() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-800">NCPID-2025</h1>
-                <p className="text-xs text-gray-500">28th Annual Pediatric Hematology Oncology Conference</p>
+                <p className="text-xs text-gray-500">National Conference Of Pediatric Infectious Diseases</p>
               </div>
             </div>
 
@@ -151,14 +151,14 @@ export default function APBMTHomepage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
             <Bell className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Abstract Submission Extended to September 1,2025(midnight 1st)</span>
+            <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
           </div>
 
           <h1 className="text-5xl font-bold mb-6">
-            PHOCON 2025 Annual Conference
+            NCPID 2025 Annual Conference
           </h1>
           <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">
-            PHOCON 28th Annual Pediatric Hematology Oncology Conference
+            National Conference Of Pediatric Infectious Diseases Conference
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
             Department of Pediatric Oncology, Kasturba Medical College, Manipal University, Manipal
