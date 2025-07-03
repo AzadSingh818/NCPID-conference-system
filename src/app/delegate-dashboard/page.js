@@ -481,7 +481,7 @@ const closeDetailModal = () => {
               <p className="text-gray-600 mb-4">
                 {apiError 
                   ? 'There was an issue connecting to the server. Please check your connection and try again.'
-                  : 'You haven\'t submitted any abstracts yet for APBMT 2025. Get started by submitting your first research abstract.'
+                  : 'You haven\'t submitted any abstracts yet for NCPID 2025. Get started by submitting your first research abstract.'
                 }
               </p>
               <div className="flex justify-center space-x-3">
@@ -598,7 +598,7 @@ const closeDetailModal = () => {
                   {abstract.status === 'approved' && (
                     <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded">
                       <p className="text-sm text-green-700">
-                        🎉 <strong>Congratulations!</strong> Your abstract has been approved for presentation at APBMT 2025.
+                        🎉 <strong>Congratulations!</strong> Your abstract has been approved for presentation at NCPID 2025.
                       </p>
                       {!abstract.final_file_url && (
                         <p className="text-xs text-green-600 mt-1">
@@ -641,7 +641,7 @@ const closeDetailModal = () => {
         {/* Enhanced Welcome Section */}
         <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow text-white p-6">
           <h2 className="text-2xl font-bold mb-2">Welcome back, {user?.name}!</h2>
-          <p className="text-blue-100 mb-4">APBMT 2025 Conference Management System</p>
+          <p className="text-blue-100 mb-4">NCPID 2025 Conference Management System</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
             <div className="flex items-center">
               <User className="h-4 w-4 mr-2" />
@@ -653,7 +653,7 @@ const closeDetailModal = () => {
             </div>
             <div className="flex items-center">
               <Calendar className="h-4 w-4 mr-2" />
-              Conference: March 15-17, 2025
+              Conference: 10th to 12th October, 2025
             </div>
           </div>
         </div>
@@ -714,7 +714,7 @@ const closeDetailModal = () => {
         {/* 🚀 NEW: Category Statistics */}
         {stats.total > 0 && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold mb-4">Your Abstracts by Category</h3>
+            <h3 className="text-lg font-semibold mb-4 text-blue-600 bg-white">Your Abstracts by Category</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               <div className="text-center p-3 bg-red-50 rounded-lg">
                 <div className="text-2xl font-bold text-red-600">{stats.byCategory.hematology}</div>
@@ -1173,7 +1173,7 @@ const closeDetailModal = () => {
       case 'schedule':
         return <PlaceholderSection 
           title="Scientific Schedule" 
-          description="View conference sessions, presentation timings, and speaker schedules for APBMT 2025"
+          description="View conference sessions, presentation timings, and speaker schedules for NCPID 2025"
           icon={Calendar}
         />;
       case 'hotels':
@@ -1185,7 +1185,7 @@ const closeDetailModal = () => {
       case 'faculty':
         return <PlaceholderSection 
           title="Faculty & Speakers" 
-          description="Meet the distinguished faculty members and keynote speakers for APBMT 2025"
+          description="Meet the distinguished faculty members and keynote speakers for NCPID 2025"
           icon={Users}
         />;
       case 'invoice':
@@ -1207,7 +1207,7 @@ const closeDetailModal = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600 font-medium">Loading APBMT Dashboard...</p>
+          <p className="text-gray-600 font-medium">Loading NCPID Dashboard...</p>
           <p className="text-gray-500 text-sm mt-1">Connecting to production server</p>
         </div>
       </div>
@@ -1225,7 +1225,7 @@ const closeDetailModal = () => {
                 <User className="h-4 w-4 text-white" />
               </div>
               <div className="ml-3">
-                <h1 className="text-xl font-semibold text-gray-900">APBMT 2025</h1>
+                <h1 className="text-xl font-semibold text-gray-900">NCPID 2025</h1>
                 <p className="text-xs text-gray-500">Production Environment • Edit Enabled</p>
               </div>
             </div>
