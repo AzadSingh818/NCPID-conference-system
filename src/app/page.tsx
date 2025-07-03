@@ -86,8 +86,8 @@ export default function APBMTHomepage() {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">APBMT 2025</h1>
-                <p className="text-xs text-gray-500">Asia-Pacific BMT Conference</p>
+                <h1 className="text-xl font-bold text-gray-800">NCPID 2025</h1>
+                <p className="text-xs text-gray-500">NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES</p>
               </div>
             </div>
             
@@ -141,27 +141,27 @@ export default function APBMTHomepage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
             <Bell className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Abstract Submission Extended to July 10, 2025</span>
+            <span className="text-sm font-medium">Abstract Submission Extended to July 7th, 2025</span>
           </div>
           
           <h1 className="text-5xl font-bold mb-6">
-            APBMT 2025 Annual Conference
+            NCPID 2025 Annual Conference
           </h1>
           <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">
-            Asia-Pacific Blood and Marrow Transplantation Group Conference
+            NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            Advancing Pediatric BMT Research & Clinical Excellence
+            Pediatric Infectious Disease
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <div className="flex items-center text-blue-100">
               <Calendar className="h-5 w-5 mr-2" />
-              <span>March 15-17, 2025</span>
+              <span>10th to 12th October, 2025</span>
             </div>
             <div className="flex items-center text-blue-100">
               <MapPin className="h-5 w-5 mr-2" />
-              <span>Mumbai, India</span>
+              <span>Bengaluru, India</span>
             </div>
             <div className="flex items-center text-blue-100">
               <Users className="h-5 w-5 mr-2" />
@@ -263,7 +263,7 @@ export default function APBMTHomepage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Conference Overview</h2>
             <p className="text-lg text-gray-600">
-              Join the premier pediatric BMT conference in Asia-Pacific
+              Join National Conference Of Pediatric Infectious Diseases
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
