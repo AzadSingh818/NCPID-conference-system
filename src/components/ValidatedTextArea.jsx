@@ -143,7 +143,7 @@ const ValidatedTextArea = ({
                 </p>
                 {/* 🚀 NEW: Additional helpful message */}
                 <p className="mt-1 text-xs">
-                  💡 Tip: Focus on the most essential findings and conclusions to stay within the 300-word limit.
+                  💡 Tip: Focus on the most essential findings and conclusions to stay within the 250-word limit.
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ const ValidatedTextArea = ({
             </div>
             <div className="ml-3">
               <p className="text-sm text-yellow-700">
-                <strong>Almost at limit:</strong> You have {validation.remaining} words remaining out of 300. 
+                <strong>Almost at limit:</strong> You have {validation.remaining} words remaining out of 250. 
                 Consider reviewing for conciseness while maintaining scientific accuracy.
               </p>
               {/* 🚀 NEW: Additional guidance */}
