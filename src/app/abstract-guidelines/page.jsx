@@ -141,20 +141,20 @@ export default function AbstractGuidelines() {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Word Limit:</span>
-                    <span className="font-bold text-yellow-700">1000 words maximum</span>
+                    <span className="text-sm font-medium text-yellow-900">Word Limit:</span>
+                    <span className="font-bold text-yellow-600">1000 words maximum</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Submission:</span>
-                    <span className="font-bold text-yellow-700">Full paper + Abstract</span>
+                    <span className="text-sm font-medium text-yellow-900">Submission:</span>
+                    <span className="font-bold text-yellow-600">Full paper + Abstract</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Format:</span>
-                    <span className="font-bold text-yellow-700">Indian Pediatrics Original Article</span>
+                    <span className="text-sm font-medium text-yellow-900">Format:</span>
+                    <span className="font-bold text-yellow-600">Indian Pediatrics Original Article</span>
                   </div>
                   <div className="p-2 bg-white rounded">
                     <span className="text-sm font-medium text-yellow-800">Awards:</span>
-                    <span className="text-sm text-yellow-700 ml-2">Top 3 papers get oral presentation opportunity</span>
+                    <span className="text-sm text-yellow-600 ml-2">Top 3 papers get oral presentation opportunity</span>
                   </div>
                 </div>
               </div>
@@ -166,16 +166,16 @@ export default function AbstractGuidelines() {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Word Limit:</span>
-                    <span className="font-bold text-blue-700">250 words</span>
+                    <span className="text-sm font-medium text-blue-800">Word Limit:</span>
+                    <span className="font-bold text-blue-600">250 words</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Font:</span>
-                    <span className="font-bold text-blue-700">ARIAL, Size 12</span>
+                    <span className="text-sm font-medium text-blue-800">Font:</span>
+                    <span className="font-bold text-blue-600">ARIAL, Size 12</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Topic:</span>
-                    <span className="font-bold text-blue-700">Pediatric Infectious Diseases</span>
+                    <span className="text-sm font-medium text-blue-800">Topic:</span>
+                    <span className="font-bold text-blue-600">Pediatric Infectious Diseases</span>
                   </div>
                 </div>
               </div>
@@ -187,12 +187,12 @@ export default function AbstractGuidelines() {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Word Limit:</span>
-                    <span className="font-bold text-green-700">250 words</span>
+                    <span className="text-sm font-medium text-green-800">Word Limit:</span>
+                    <span className="font-bold text-green-600">250 words</span>
                   </div>
                   <div className="flex justify-between items-center p-2 bg-white rounded">
-                    <span className="text-sm font-medium">Font:</span>
-                    <span className="font-bold text-green-700">ARIAL, Size 12</span>
+                    <span className="text-sm font-medium text-green-800">Font:</span>
+                    <span className="font-bold text-green-600">ARIAL, Size 12</span>
                   </div>
                   <div className="p-2 bg-white rounded">
                     <span className="text-sm font-medium text-green-800">Note:</span>
