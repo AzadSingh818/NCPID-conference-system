@@ -53,7 +53,7 @@ export default function AbstractGuidelines() {
             <div>
               <h3 className="font-semibold text-red-800">Important Notice</h3>
               <p className="text-red-700 text-sm">
-                Abstract submission deadline has been extended to <strong>July 10th, 2025</strong>. 
+                Abstract submission deadline has been extended to <strong>July 7th, 2025</strong>. 
                 All guidelines below must be followed for successful submission.
               </p>
             </div>
@@ -474,7 +474,7 @@ export default function AbstractGuidelines() {
           </p>
           <p className="text-xs mt-2">
             © NCPID 2025 - National Conference on Pediatric Infectious Diseases | 
-            For queries: <a href="mailto:abstracts@ncpid2025.org" className="text-blue-600 hover:underline">abstracts@ncpid2025.org</a>
+            For queries: <a href="mailto:iapidkc2022@gmail.com" className="text-blue-600 hover:underline">iapidkc2022@gmail.com</a>
           </p>
         </div>
       </div>
