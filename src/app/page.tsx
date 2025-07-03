@@ -86,8 +86,8 @@ export default function APBMTHomepage() {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">APBMT 2025</h1>
-                <p className="text-xs text-gray-500">Asia-Pacific BMT Conference</p>
+                <h1 className="text-xl font-bold text-gray-800">NCPID 2025</h1>
+                <p className="text-xs text-gray-500">NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES</p>
               </div>
             </div>
             
@@ -145,13 +145,13 @@ export default function APBMTHomepage() {
           </div>
           
           <h1 className="text-5xl font-bold mb-6">
-            APBMT 2025 Annual Conference
+            NCPID 2025 Annual Conference
           </h1>
           <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">
-            Asia-Pacific Blood and Marrow Transplantation Group Conference
+            NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            Advancing Pediatric BMT Research & Clinical Excellence
+            Pediatric Infectious Disease
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
