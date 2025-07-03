@@ -383,10 +383,10 @@ export default function APBMTHomepage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Heart className="h-6 w-6 text-blue-400" />
-                <span className="text-lg font-bold">PHOCON 2025</span>
+                <span className="text-lg font-bold">NCPID 2025</span>
               </div>
               <p className="text-gray-400 text-sm">
-                PHOCON 28th Annual Pediatric Hematology Oncology Conference
+                NCPID 2025 Annual National Conference Of Pediatric Infectious Diseases Conference
               </p>
             </div>
 
@@ -403,9 +403,9 @@ export default function APBMTHomepage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Abstract Deadline: September 1, 2025 (midnight 1st)</li>
+                <li>Abstract Deadline: July 31st, 2025 (midnight 1st)</li>
                 <li>Early Registration: July 1, 2025</li>
-                <li>Conference: 29th-30th Nov, 2025</li>
+                <li>Conference: 10th-12th October, 2025</li>
               </ul>
             </div>
 
@@ -414,22 +414,22 @@ export default function APBMTHomepage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>abstracts@phocon2025.com</span>
+                  <span>iapidkc2022@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+916364690353</span>
+                  <span>+91 7349735913</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Dr TMA Pai Halls, KMC, Manipal</span>
+                  <span>Bengaluru, India</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; PHOCON 28th Annual Pediatric Hematology Oncology Conference.All rights reserved.</p>
+            <p>&copy; NCPID 2025 Annual National Conference Of Pediatric Infectious Diseases Conference.All rights reserved.</p>
             {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
