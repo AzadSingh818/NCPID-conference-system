@@ -96,7 +96,7 @@ export default function DelegateRegisterPage() {
             Delegate Registration
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            APBMT 2025 - Annual Meeting on Pediatric Blood and Marrow Transplantation
+            NCPID 2025 - National Conference Of Pediatric Infectious Diseases
           </p>
           <p className="mt-1 text-xs text-gray-500">
             Create your account to submit abstracts and access conference resources

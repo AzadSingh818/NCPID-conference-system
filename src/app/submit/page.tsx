@@ -493,11 +493,11 @@ export default function SubmitAbstract() {
         </div>
 
         {/* System Info */}
-        <div className="mt-6 text-center text-gray-500">
+        {/* <div className="mt-6 text-center text-gray-500">
           <p>🚀 APBMT Abstract Submission System v2.0</p>
           <p>⚡ Built with Next.js 15 + PRD Compliant Implementation</p>
           <p className="text-xs mt-1">🔄 Word Limit: 300 words • Category Support: Enabled</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
