@@ -196,13 +196,13 @@ export default function SubmitAbstract() {
             📝 Submit Research Abstract
           </h1>
           <p className="text-xl text-gray-600">
-            APBMT 2025 Conference Submission
+            NCPID 2025 Conference Submission
           </p>
           <div className="mt-4 flex items-center justify-center space-x-4">
             <div className="text-sm text-blue-600 bg-blue-50 inline-block px-4 py-2 rounded-lg">
               📝 Submission ID: {submissionId}
             </div>
-            <div className="text-sm text-green-600 bg-green-50 inline-block px-4 py-2 rounded-lg flex items-center">
+            <div className="text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg flex items-center">
               <User className="h-4 w-4 mr-1" />
               Welcome, {user.name}
             </div>
@@ -245,13 +245,13 @@ export default function SubmitAbstract() {
                 <FileText className="h-4 w-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                 <div>
                   {/* 🚀 UPDATED: Changed from 250 to 300 words */}
-                  <p><strong className="text-black bg-white">Word Limit: 300 words (All Categories)</strong></p>
+                  <p><strong className="text-black bg-white">Word Limit: 250 words (All Categories)</strong></p>
                   <ul className="ml-4 mt-1 space-y-1 text-xs text-red-600 bg-white">
-                    {/* <li>• Free Paper: 300 words</li> */}
-                    <li>• Poster: 300 words</li>
+                    <li>• Free Paper: 250 words</li>
+                    <li>• Poster: 250 words</li>
                     {/* <li>• E-Poster: 300 words</li> */}
-                    {/* <li>• Award Paper: 300 words</li> */}
-                    <li>• Oral Paper: 300 words</li>
+                    <li>• Award Paper: 250 words</li>
+                    {/* <li>• Oral Paper: 300 words</li> */}
                     {/* <li>• Oral Presentation: 300 words</li> */}
                   </ul>
                 </div>
@@ -432,7 +432,7 @@ export default function SubmitAbstract() {
             </div>
 
             {/* Abstract Content with 300 Word Validation */}
-            <div className="space-y-4">
+            <div className="space-y-4 text-black bg-white">
               <ValidatedTextArea
                 value={formData.abstract_content}
                 onChange={(content) => setFormData({...formData, abstract_content: content})}
@@ -440,7 +440,7 @@ export default function SubmitAbstract() {
                 onValidationChange={handleWordCountValidation}
                 disabled={loading}
                 required={true}
-                placeholder="Enter your complete abstract here... (300 words maximum)"
+                placeholder="Enter your complete abstract here... (250 words maximum)"
               />
             </div>
 
@@ -493,11 +493,11 @@ export default function SubmitAbstract() {
         </div>
 
         {/* System Info */}
-        <div className="mt-6 text-center text-gray-500">
+        {/* <div className="mt-6 text-center text-gray-500">
           <p>🚀 APBMT Abstract Submission System v2.0</p>
           <p>⚡ Built with Next.js 15 + PRD Compliant Implementation</p>
           <p className="text-xs mt-1">🔄 Word Limit: 300 words • Category Support: Enabled</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
