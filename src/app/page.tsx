@@ -142,8 +142,8 @@ export default function APBMTHomepage() {
           alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
           width={2000}
           height={900}
-          className="w-full h-auto object-cover"  {/* rounded-lg shadow-lg हटाएं */}
-          style={{ display: 'block' }}  {/* fixed dimensions हटाएं */}
+          className="w-full h-auto object-cover"  
+          style={{ display: 'block' }}  
         />
       </div>
       {/* Hero Section */}
