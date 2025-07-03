@@ -144,7 +144,7 @@ export default function APBMTHomepage() {
             src="/ncpid-2025-banner.jpg" 
             alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
             className="w-full h-auto object-cover"
-            style={{ maxHeight: '500px' }}
+            style={{ maxHeight: '700px' }}
           />
         </div>
         
