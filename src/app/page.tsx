@@ -26,30 +26,30 @@ export default function APBMTHomepage() {
 
   const conferenceStats = [
     { icon: Users, label: 'Expected Attendees', value: '500+', color: 'blue' },
-    { icon: FileText, label: 'Abstract Categories', value: '5', color: 'green' },
+    { icon: FileText, label: 'Abstract Categories', value: '2', color: 'green' },
     { icon: Award, label: 'Keynote Speakers', value: '15', color: 'purple' },
-    { icon: Calendar, label: 'Conference Days', value: '3', color: 'orange' }
+    { icon: Calendar, label: 'Conference Days', value: '2', color: 'orange' }
   ];
 
   const importantDates = [
-    { event: 'Abstract Submission Deadline', date: 'July 31st, 2025', status: 'extended', color: 'red' },
-    { event: 'Early Bird Registration', date: 'August 15, 2025', status: 'open', color: 'green' },
-    { event: 'Final Registration', date: 'July 31st, 2025', status: 'upcoming', color: 'blue' },
-    { event: 'Conference Dates', date: '10th to 12th October, 2025', status: 'confirmed', color: 'purple' }
+    { event: 'Abstract Submission Deadline', date: 'September 1,2025(midnight 1st)', status: 'extended', color: 'red' },
+    { event: 'Early Bird Registration', date: 'July 1,2025', status: 'open', color: 'green' },
+    { event: 'Abstact Notification', date: 'October 1,2025', status: 'upcoming', color: 'blue' },
+    { event: 'Conference Dates', date: '29th-30th Nov,2025', status: 'confirmed', color: 'purple' }
   ];
 
   const abstractCategories = [
-    { 
-      title: 'Free Paper Presentation', 
-      duration: '6+2 minutes', 
-      wordLimit: '1000 words',
-      icon: Microscope,
-      description: 'Original research presentations with discussion'
-    },
+    // { 
+    //   title: 'Free Paper Presentation', 
+    //   duration: '6+2 minutes', 
+    //   wordLimit: '250 words',
+    //   icon: Microscope,
+    //   description: 'Original research presentations with discussion'
+    // },
     { 
       title: 'Poster Presentation', 
       duration: 'Display', 
-      wordLimit: '200 words',
+      wordLimit: '300 words',
       icon: FileText,
       description: 'Visual presentation of research findings'
     },
@@ -61,11 +61,11 @@ export default function APBMTHomepage() {
     //   description: 'Electronic poster with presentation slot'
     // },
     { 
-      title: 'Award Paper', 
+      title: 'Oral Presentation', 
       duration: '8+2 minutes', 
-      wordLimit: '250 words',
-      icon: Award,
-      description: 'Competitive presentations for awards'
+      wordLimit: '300 words',
+      icon: Activity,
+      description: 'Competitive presentations for Oral session'
     }
   ];
 
@@ -86,8 +86,8 @@ export default function APBMTHomepage() {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">NCPID 2025</h1>
-                <p className="text-xs text-gray-500">NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES</p>
+                <h1 className="text-xl font-bold text-gray-800">NCPID-2025</h1>
+                <p className="text-xs text-gray-500">National Conference of Pediatric Infectious Diseases</p>
               </div>
             </div>
             
@@ -136,54 +136,57 @@ export default function APBMTHomepage() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
-            <Bell className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
-          </div>
-          
-          <h1 className="text-5xl font-bold mb-6">
-            NCPID 2025 Annual Conference
-          </h1>
-          <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">
-            NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES
-          </p>
-          <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            Pediatric Infectious Disease
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <div className="flex items-center text-blue-100">
-              <Calendar className="h-5 w-5 mr-2" />
-              <span>10th to 12th October, 2025</span>
+      {/* Hero Section with NCPID Banner */}
+      <section className="bg-white">
+        {/* NCPID Banner Image */}
+        <div className="w-full">
+          <img 
+            src="/ncpid-2025-banner.jpg" 
+            alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
+            className="w-full h-auto object-cover"
+            style={{ maxHeight: '500px' }}
+          />
+        </div>
+        
+        {/* Content Below Banner */}
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-12">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
+              <Bell className="h-4 w-4 mr-2" />
+              <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
             </div>
-            <div className="flex items-center text-blue-100">
-              <MapPin className="h-5 w-5 mr-2" />
-              <span>Bengaluru, India</span>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <div className="flex items-center text-blue-100">
+                <Calendar className="h-5 w-5 mr-2" />
+                <span>10th to 12th October, 2025</span>
+              </div>
+              <div className="flex items-center text-blue-100">
+                <MapPin className="h-5 w-5 mr-2" />
+                <span>Four Seasons Hotel Bengaluru at Embassy One</span>
+              </div>
+              <div className="flex items-center text-blue-100">
+                <Users className="h-5 w-5 mr-2" />
+                <span>500+ Expected Attendees</span>
+              </div>
             </div>
-            <div className="flex items-center text-blue-100">
-              <Users className="h-5 w-5 mr-2" />
-              <span>500+ Expected Attendees</span>
-            </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={handleAbstractSubmission}
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center"
-            >
-              <FileText className="h-5 w-5 mr-2" />
-              Submit Abstract
-            </button>
-            <button
-              onClick={handleRegister}
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center"
-            >
-              <UserPlus className="h-5 w-5 mr-2" />
-              Register Now
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={handleAbstractSubmission}
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center"
+              >
+                <FileText className="h-5 w-5 mr-2" />
+                Submit Abstract
+              </button>
+              <button
+                onClick={handleRegister}
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center"
+              >
+                <UserPlus className="h-5 w-5 mr-2" />
+                Register Now
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -263,7 +266,7 @@ export default function APBMTHomepage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Conference Overview</h2>
             <p className="text-lg text-gray-600">
-              Join National Conference Of Pediatric Infectious Diseases
+              Join the PHOCON 28th Annual Pediatric Hematology Oncology Conference
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -343,7 +346,7 @@ export default function APBMTHomepage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join NCPID 2025?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            National Conference Of Pediatric Infectious Diseases
+            Submit your research abstract and be part of the National Conference of Pediatric Infectious Diseases
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -356,7 +359,7 @@ export default function APBMTHomepage() {
               <ArrowRight className="h-5 w-5 ml-2" />
             </button>
             <button
-              onClick={() => window.open('mailto:iapidkc2022@gmail.com', '_blank')}
+              onClick={() => window.open('mailto:info@ncpid2025.org', '_blank')}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center"
             >
               <Mail className="h-5 w-5 mr-2" />
@@ -376,7 +379,7 @@ export default function APBMTHomepage() {
                 <span className="text-lg font-bold">NCPID 2025</span>
               </div>
               <p className="text-gray-400 text-sm">
-                National Conference Of Pediatric Infectious Diseases.
+                National Conference of Pediatric Infectious Diseases
               </p>
             </div>
             
@@ -394,8 +397,8 @@ export default function APBMTHomepage() {
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>Abstract Deadline: July 31st, 2025</li>
-                <li>Early Registration: Aug 15, 2025</li>
-                <li>Conference: 10th to 12th October, 2025</li>
+                <li>Early Registration: July 1, 2025</li>
+                <li>Conference: 10th-12th Oct, 2025</li>
               </ul>
             </div>
             
@@ -404,22 +407,22 @@ export default function APBMTHomepage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>iapidkc2022@gmail.com</span>
+                  <span>abstracts@ncpid2025.org</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91 7349735913</span>
+                  <span>+91 9876543210</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Bengaluru, India</span>
+                  <span>Four Seasons Hotel Bengaluru</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 National Conference Of Pediatric Infectious Diseases. All rights reserved.</p>
+            <p>&copy; National Conference of Pediatric Infectious Diseases. All rights reserved.</p>
             {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
