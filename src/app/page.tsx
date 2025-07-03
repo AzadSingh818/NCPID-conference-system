@@ -393,9 +393,9 @@ export default function APBMTHomepage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Abstract Deadline: July 10, 2025</li>
+                <li>Abstract Deadline: July 7th, 2025</li>
                 <li>Early Registration: Aug 15, 2025</li>
-                <li>Conference: March 15-17, 2025</li>
+                <li>Conference: 10th to 12th October, 2025</li>
               </ul>
             </div>
             
