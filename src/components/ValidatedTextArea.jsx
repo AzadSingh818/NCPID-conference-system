@@ -9,7 +9,7 @@ const ValidatedTextArea = ({
   value = '',
   onChange,
   presentationType = 'Poster', // Default to 'Poster'
-  placeholder = 'Enter your abstract content here... (maximum words for different category-wise)',
+  placeholder = 'Enter your abstract content here...',
   label = 'Abstract Content',
   required = true,
   className = '',
@@ -20,6 +20,24 @@ const ValidatedTextArea = ({
 }) => {
   const [isFocused, setIsFocused] = useState(false);
   const [hasContent, setHasContent] = useState(false);
+
+  // 🚀 NEW: Get word limit based on presentation type
+  const getWordLimit = (presentationType) => {
+    switch (presentationType) {
+      case 'Award Paper':
+        return 1000;
+      case 'Free Paper':
+        return 250;
+      case 'Poster':
+        return 250;
+      case 'Oral':
+        return 250;
+      default:
+        return 250;
+    }
+  };
+
+  const currentWordLimit = getWordLimit(presentationType);
 
   // Validate and notify parent component
   useEffect(() => {
@@ -55,8 +73,10 @@ const ValidatedTextArea = ({
       <label className="block text-sm font-medium text-gray-700">
         {label}
         {required && <span className="text-red-500 ml-1">*</span>}
-        {/* 🚀 UPDATED: Show 300 word limit in label */}
-        <span className="text-gray-500 text-xs ml-2">(Maximum words for different categories)</span>
+        {/* 🚀 UPDATED: Dynamic word limit based on presentation type */}
+        <span className="text-gray-500 text-xs ml-2">
+          (Maximum {currentWordLimit} words for {presentationType})
+        </span>
       </label>
 
       {/* Abstract Structure Guidelines */}
@@ -68,9 +88,14 @@ const ValidatedTextArea = ({
           <strong>Results:</strong> Key findings and data • {' '}
           <strong>Conclusion:</strong> Clinical implications
         </p>
-        {/* 🚀 NEW: Added word limit reminder */}
+        {/* 🚀 UPDATED: Dynamic word limit reminder */}
         <p className="text-blue-700 text-xs mt-2 font-medium">
-          📝 Word Limit: Maximum words for different categories
+          📝 Word Limit: {currentWordLimit} words for {presentationType}
+          {presentationType === 'Award Paper' && (
+            <span className="ml-2 text-green-700 font-semibold">
+              ✨ Extended limit for comprehensive research presentation
+            </span>
+          )}
         </p>
       </div>
 
@@ -107,7 +132,7 @@ const ValidatedTextArea = ({
               text-xs px-2 py-1 rounded-full
               ${validation.isValid ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}
             `}>
-              {validation.wordCount}w / 300w
+              {validation.wordCount}w / {currentWordLimit}w
             </div>
           </div>
         )}
@@ -123,7 +148,7 @@ const ValidatedTextArea = ({
         />
       )}
 
-      {/* 🚀 UPDATED: Validation Error Message with 300 word limit */}
+      {/* 🚀 UPDATED: Validation Error Message with dynamic word limit */}
       {!validation.isValid && hasContent && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-3">
           <div className="flex items-start">
@@ -141,9 +166,13 @@ const ValidatedTextArea = ({
                   Your abstract is {Math.abs(validation.remaining)} words over the {validation.limit}-word limit for {presentationType}. 
                   Please reduce the content to meet submission requirements.
                 </p>
-                {/* 🚀 NEW: Additional helpful message */}
+                {/* 🚀 UPDATED: Type-specific helpful messages */}
                 <p className="mt-1 text-xs">
-                  💡 Tip: Focus on the most essential findings and conclusions to stay within the different word limit for different categories.
+                  {presentationType === 'Award Paper' ? (
+                    <span>💡 Tip: Even with 1000 words, focus on the most impactful findings and clear methodology.</span>
+                  ) : (
+                    <span>💡 Tip: Focus on the most essential findings and conclusions to stay within the {currentWordLimit}-word limit.</span>
+                  )}
                 </p>
               </div>
             </div>
@@ -162,19 +191,23 @@ const ValidatedTextArea = ({
             </div>
             <div className="ml-3">
               <p className="text-sm text-yellow-700">
-                <strong>Almost at limit:</strong> You have {validation.remaining} words remaining out of 250. 
+                <strong>Almost at limit:</strong> You have {validation.remaining} words remaining out of {currentWordLimit}. 
                 Consider reviewing for conciseness while maintaining scientific accuracy.
               </p>
-              {/* 🚀 NEW: Additional guidance */}
+              {/* 🚀 UPDATED: Type-specific guidance */}
               <p className="text-xs text-yellow-600 mt-1">
-                💡 Consider using shorter sentences and removing unnecessary adjectives or adverbs.
+                {presentationType === 'Award Paper' ? (
+                  <span>💡 With 1000 words available, ensure each section (Background, Methods, Results, Conclusion) is well-balanced.</span>
+                ) : (
+                  <span>💡 Consider using shorter sentences and removing unnecessary adjectives or adverbs.</span>
+                )}
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* 🚀 NEW: Success message when word count is optimal */}
+      {/* 🚀 UPDATED: Success message when word count is optimal */}
       {validation.isValid && validation.percentage >= 50 && validation.percentage <= 85 && hasContent && (
         <div className="bg-green-50 border border-green-200 rounded-lg p-2">
           <div className="flex items-center">
@@ -187,13 +220,18 @@ const ValidatedTextArea = ({
               <p className="text-sm text-green-700">
                 <strong>Good length:</strong> {validation.wordCount} words used ({validation.remaining} remaining).
                 Your abstract is at an optimal length for comprehensive review.
+                {presentationType === 'Award Paper' && (
+                  <span className="block text-xs mt-1">
+                    ✨ Award Paper: Excellent use of extended word limit for detailed research presentation.
+                  </span>
+                )}
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* 🚀 NEW: Guidance for very short abstracts */}
+      {/* 🚀 UPDATED: Guidance for very short abstracts */}
       {validation.isValid && validation.percentage < 50 && hasContent && (
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-2">
           <div className="flex items-center">
@@ -204,8 +242,40 @@ const ValidatedTextArea = ({
             </div>
             <div className="ml-2">
               <p className="text-sm text-blue-700">
-                <strong>Consider expanding:</strong> You have {validation.remaining} more words available. 
-                Consider adding more detail to your methodology, results, or clinical implications.
+                <strong>Consider expanding:</strong> You have {validation.remaining} more words available out of {currentWordLimit}. 
+                {presentationType === 'Award Paper' ? (
+                  <span>Consider adding more detail to your methodology, detailed results, statistical analysis, or clinical implications.</span>
+                ) : (
+                  <span>Consider adding more detail to your methodology, results, or clinical implications.</span>
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 🚀 NEW: Special guidance for Award Paper submissions */}
+      {presentationType === 'Award Paper' && hasContent && validation.isValid && (
+        <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
+          <div className="flex items-start">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <h4 className="text-sm font-medium text-purple-800">Award Paper Submission</h4>
+              <p className="text-sm text-purple-700 mt-1">
+                With 1000 words available, ensure your abstract includes:
+              </p>
+              <ul className="text-xs text-purple-600 mt-2 space-y-1">
+                <li>• <strong>Comprehensive background</strong> with literature context</li>
+                <li>• <strong>Detailed methodology</strong> including statistical analysis</li>
+                <li>• <strong>Complete results</strong> with key findings and data</li>
+                <li>• <strong>Clinical significance</strong> and future implications</li>
+              </ul>
+              <p className="text-xs text-purple-600 mt-2">
+                Current usage: {validation.wordCount}/1000 words ({validation.percentage.toFixed(1)}%)
               </p>
             </div>
           </div>
