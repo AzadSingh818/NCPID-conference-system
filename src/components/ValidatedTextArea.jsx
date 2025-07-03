@@ -56,7 +56,7 @@ const ValidatedTextArea = ({
         {label}
         {required && <span className="text-red-500 ml-1">*</span>}
         {/* 🚀 UPDATED: Show 300 word limit in label */}
-        <span className="text-gray-500 text-xs ml-2">(Maximum 250 words)</span>
+        <span className="text-gray-500 text-xs ml-2">(Maximum words for different categories)</span>
       </label>
 
       {/* Abstract Structure Guidelines */}
@@ -70,7 +70,7 @@ const ValidatedTextArea = ({
         </p>
         {/* 🚀 NEW: Added word limit reminder */}
         <p className="text-blue-700 text-xs mt-2 font-medium">
-          📝 Word Limit: 250 words for all presentation types
+          📝 Word Limit: Maximum words for different categories
         </p>
       </div>
 
