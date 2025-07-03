@@ -431,7 +431,7 @@ export default function SubmitAbstract() {
               </div>
             </div>
 
-            {/* Abstract Content with 300 Word Validation */}
+            {/* Abstract Content with category-wise Word Validation */}
             <div className="space-y-4 text-black bg-white">
               <ValidatedTextArea
                 value={formData.abstract_content}
@@ -440,7 +440,7 @@ export default function SubmitAbstract() {
                 onValidationChange={handleWordCountValidation}
                 disabled={loading}
                 required={true}
-                placeholder="Enter your complete abstract here... (250 words maximum)"
+                placeholder="Enter your complete abstract here... (maximum words for category-wise)"
               />
             </div>
 
@@ -485,7 +485,7 @@ export default function SubmitAbstract() {
               
               {!wordCountValid && (
                 <p className="text-sm text-red-600 text-center mt-2">
-                  Please ensure your abstract meets word limit requirements (300 words maximum)
+                  Please ensure your abstract meets word limit requirements (maximum words for category-wise)
                 </p>
               )}
             </div>
