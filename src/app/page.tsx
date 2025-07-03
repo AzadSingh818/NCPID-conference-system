@@ -137,8 +137,18 @@ export default function APBMTHomepage() {
       </header>
 
       {/* Hero Section with NCPID Banner */}
-      <section className="bg-white">
-
+      <section className="bg-white"> 
+        {/* NCPID Banner Image */}
+        <div className="w-full flex justify-center mb-6">
+              <img
+                src="/ncpid-2025-banner.jpg"
+                alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
+                width={2000}
+                height={900}
+                className="object-cover rounded-lg shadow-lg"
+                style={{ width: '2000px', height: '900px', maxWidth: '100%' }}
+              />
+            </div>
         {/* Content Below Banner */}
         <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-12">
           <div className="max-w-7xl mx-auto px-4 text-center">
@@ -161,18 +171,8 @@ export default function APBMTHomepage() {
                 <span>500+ Expected Attendees</span>
               </div>
             </div> */}
-            {/* NCPID Banner Image */}
+           
             
-            <div className="w-full flex justify-center mb-6">
-              <img
-                src="/ncpid-2025-banner.jpg"
-                alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
-                width={2000}
-                height={900}
-                className="object-cover rounded-lg shadow-lg"
-                style={{ width: '2000px', height: '900px', maxWidth: '100%' }}
-              />
-            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleAbstractSubmission}
