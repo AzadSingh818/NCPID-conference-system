@@ -26,16 +26,16 @@ export default function APBMTHomepage() {
 
   const conferenceStats = [
     { icon: Users, label: 'Expected Attendees', value: '500+', color: 'blue' },
-    { icon: FileText, label: 'Abstract Categories', value: '2', color: 'green' },
+    { icon: FileText, label: 'Abstract Categories', value: '3', color: 'green' },
     { icon: Award, label: 'Keynote Speakers', value: '15', color: 'purple' },
-    { icon: Calendar, label: 'Conference Days', value: '2', color: 'orange' }
+    { icon: Calendar, label: 'Conference Days', value: '3', color: 'orange' }
   ];
 
   const importantDates = [
-    { event: 'Abstract Submission Deadline', date: 'September 1,2025(midnight 1st)', status: 'extended', color: 'red' },
+    { event: 'Abstract Submission Deadline', date: 'July 31st, 2025', status: 'extended', color: 'red' },
     { event: 'Early Bird Registration', date: 'July 1,2025', status: 'open', color: 'green' },
     { event: 'Abstact Notification', date: 'October 1,2025', status: 'upcoming', color: 'blue' },
-    { event: 'Conference Dates', date: '29th-30th Nov,2025', status: 'confirmed', color: 'purple' }
+    { event: 'Conference Dates', date: '10th - 12th October,2025', status: 'confirmed', color: 'purple' }
   ];
 
   const abstractCategories = [
@@ -86,7 +86,7 @@ export default function APBMTHomepage() {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">PHOCON-2025</h1>
+                <h1 className="text-xl font-bold text-gray-800">NCPID-2025</h1>
                 <p className="text-xs text-gray-500">28th Annual Pediatric Hematology Oncology Conference</p>
               </div>
             </div>
