@@ -161,8 +161,8 @@ export default function APBMTHomepage() {
             National Conference Of Pediatric Infectious Diseases Conference
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            HOSTED BY - PEDIATRIC INFECTIOUS DISEASES ACADEMY [PIDA]
-            {'\n'}CO-HOSTS-IAP-ID KARNATAKA CHAPTER, IAP BENGALURU
+            <p>HOSTED BY - PEDIATRIC INFECTIOUS DISEASES ACADEMY [PIDA]</p>
+            <p>CO-HOSTS-IAP-ID KARNATAKA CHAPTER, IAP BENGALURU</p>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
