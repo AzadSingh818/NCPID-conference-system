@@ -231,7 +231,7 @@ export default function SubmitAbstract() {
               
               <div className="flex items-start text-red-600">
                 <Clock className="h-4 w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span><strong>Deadline:</strong> July 7th, 2025 (extended)</span>
+                <span><strong>Deadline:</strong> July 31st, 2025 (extended)</span>
               </div>
               
               <div className="bg-red-50 border-l-4 border-red-400 p-3">
@@ -384,16 +384,16 @@ export default function SubmitAbstract() {
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black bg-white"
                   disabled={loading}
                 >
-                  {/* <option value="Free Paper">Free Paper</option> */}
+                  <option value="Free Paper">Free Paper</option>
                   <option value="Poster">Poster Presentation</option>
-                  {/* <option value="E-Poster">E-Poster</option>
-                  <option value="Award Paper">Award Paper</option> */}
-                  <option value="Oral">Oral Presentation</option>
+                  {/* {/* <option value="E-Poster">E-Poster</option> */}
+                  <option value="Award Paper">Award Paper</option>
+                  {/* <option value="Oral">Oral Presentation</option> */}
                 </select>
               </div>
 
               {/* 🚀 NEW: Category Field (as requested in DOCX) */}
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Category *
                 </label>
@@ -413,7 +413,7 @@ export default function SubmitAbstract() {
                 <p className="mt-1 text-xs text-gray-500">
                   Select the primary medical category for your research
                 </p>
-              </div>
+              </div> */}
 
               {/* Co-Authors */}
               <div className="md:col-span-2">

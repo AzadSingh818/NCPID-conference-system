@@ -141,7 +141,7 @@ export default function APBMTHomepage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
             <Bell className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Abstract Submission Extended to July 7th, 2025</span>
+            <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
           </div>
           
           <h1 className="text-5xl font-bold mb-6">
@@ -393,7 +393,7 @@ export default function APBMTHomepage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Abstract Deadline: July 7th, 2025</li>
+                <li>Abstract Deadline: July 31st, 2025</li>
                 <li>Early Registration: Aug 15, 2025</li>
                 <li>Conference: 10th to 12th October, 2025</li>
               </ul>
