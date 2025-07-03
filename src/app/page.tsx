@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import {
-  Calendar, MapPin, Users, Award, FileText, Clock,
-  CheckCircle, ArrowRight, Mail, Phone, Globe,
+import { 
+  Calendar, MapPin, Users, Award, FileText, Clock, 
+  CheckCircle, ArrowRight, Mail, Phone, Globe, 
   Building, Heart, Microscope, User, UserPlus,
   Download, ExternalLink, Bell, Star, Target,
   Stethoscope, Activity, Brain, Shield
@@ -26,13 +26,13 @@ export default function APBMTHomepage() {
 
   const conferenceStats = [
     { icon: Users, label: 'Expected Attendees', value: '500+', color: 'blue' },
-    { icon: FileText, label: 'Abstract Categories', value: '3', color: 'green' },
+    { icon: FileText, label: 'Abstract Categories', value: '2', color: 'green' },
     { icon: Award, label: 'Keynote Speakers', value: '15', color: 'purple' },
-    { icon: Calendar, label: 'Conference Days', value: '3', color: 'orange' }
+    { icon: Calendar, label: 'Conference Days', value: '2', color: 'orange' }
   ];
 
   const importantDates = [
-    { event: 'Abstract Submission Deadline', date: 'July 31st, 2025', status: 'extended', color: 'red' },
+    { event: 'Abstract Submission Deadline', date: 'September 1,2025(midnight 1st)', status: 'extended', color: 'red' },
     { event: 'Early Bird Registration', date: 'July 1,2025', status: 'open', color: 'green' },
     { event: 'Abstact Notification', date: 'October 1,2025', status: 'upcoming', color: 'blue' },
     { event: 'Conference Dates', date: '29th-30th Nov,2025', status: 'confirmed', color: 'purple' }
@@ -46,9 +46,9 @@ export default function APBMTHomepage() {
     //   icon: Microscope,
     //   description: 'Original research presentations with discussion'
     // },
-    {
-      title: 'Poster Presentation',
-      duration: 'Display',
+    { 
+      title: 'Poster Presentation', 
+      duration: 'Display', 
       wordLimit: '300 words',
       icon: FileText,
       description: 'Visual presentation of research findings'
@@ -60,9 +60,9 @@ export default function APBMTHomepage() {
     //   icon: Activity,
     //   description: 'Electronic poster with presentation slot'
     // },
-    {
-      title: 'Oral Presentation',
-      duration: '8+2 minutes',
+    { 
+      title: 'Oral Presentation', 
+      duration: '8+2 minutes', 
       wordLimit: '300 words',
       icon: Activity,
       description: 'Competitive presentations for Oral session'
@@ -86,31 +86,31 @@ export default function APBMTHomepage() {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">NCPID-2025</h1>
-                <p className="text-xs text-gray-500">National Conference Of Pediatric Infectious Diseases</p>
+                <h1 className="text-xl font-bold text-gray-800">PHOCON-2025</h1>
+                <p className="text-xs text-gray-500">28th Annual Pediatric Hematology Oncology Conference</p>
               </div>
             </div>
-
+            
             <nav className="hidden md:flex space-x-8">
-              <button
+              <button 
                 onClick={() => setActiveTab('overview')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'overview' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Overview
               </button>
-              <button
+              <button 
                 onClick={() => setActiveTab('program')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'program' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Program
               </button>
-              <button
+              <button 
                 onClick={() => setActiveTab('speakers')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'speakers' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Faculty
               </button>
-              <button
+              <button 
                 onClick={() => setActiveTab('registration')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'registration' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
@@ -135,44 +135,33 @@ export default function APBMTHomepage() {
           </div>
         </div>
       </header>
-      {/* NCPID Banner Image */}
-      <div className="w-full">
-        <img
-          src="/ncpid-2025-banner.jpg"
-          alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
-          width={2000}
-          height={900}
-          className="w-full h-auto object-cover"
-          style={{ display: 'block' }}
-        />
-      </div>
-      {/* Content Below Banner */}
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
             <Bell className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
+            <span className="text-sm font-medium">Abstract Submission Extended to September 1,2025(midnight 1st)</span>
           </div>
-
+          
           <h1 className="text-5xl font-bold mb-6">
-            NCPID 2025 Annual Conference
+            PHOCON 2025 Annual Conference
           </h1>
           <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">
-            NATIONAL CONFERENCE OF PEDIATRIC INFECTIOUS DISEASES
+            PHOCON 28th Annual Pediatric Hematology Oncology Conference
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            <br>HOSTED BY PEDIATRIC INFECTIOUS DISEASES ACADEMY [PIDA]</br> CO-HOSTS - IAP-ID KARNATAKA CHAPTER, IAP BENGALURU
+            Department of Pediatric Oncology, Kasturba Medical College, Manipal University, Manipal
           </p>
-
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <div className="flex items-center text-blue-100">
               <Calendar className="h-5 w-5 mr-2" />
-              <span>10TH TΟ 12TH OCTOBER, 2025</span>
+              <span>29th - 30th Nov, 2025</span>
             </div>
             <div className="flex items-center text-blue-100">
               <MapPin className="h-5 w-5 mr-2" />
-              <span>Bengaluru, India</span>
+              <span>Dr TMA Pai Halls, KMC, Manipal</span>
             </div>
             <div className="flex items-center text-blue-100">
               <Users className="h-5 w-5 mr-2" />
@@ -274,7 +263,7 @@ export default function APBMTHomepage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Conference Overview</h2>
             <p className="text-lg text-gray-600">
-              Join National Conference Of Pediatric Infectious Diseases
+              Join the PHOCON 28th Annual Pediatric Hematology Oncology Conference
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -308,11 +297,12 @@ export default function APBMTHomepage() {
                       <div className="font-medium text-gray-900">{date.event}</div>
                       <div className="text-sm text-gray-600">{date.date}</div>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${date.status === 'extended' ? 'bg-red-100 text-red-700' :
-                        date.status === 'open' ? 'bg-green-100 text-green-700' :
-                          date.status === 'upcoming' ? 'bg-blue-100 text-blue-700' :
-                            'bg-purple-100 text-purple-700'
-                      }`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                      date.status === 'extended' ? 'bg-red-100 text-red-700' :
+                      date.status === 'open' ? 'bg-green-100 text-green-700' :
+                      date.status === 'upcoming' ? 'bg-blue-100 text-blue-700' :
+                      'bg-purple-100 text-purple-700'
+                    }`}>
                       {date.status.charAt(0).toUpperCase() + date.status.slice(1)}
                     </span>
                   </div>
@@ -351,11 +341,11 @@ export default function APBMTHomepage() {
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Join NCPID 2025?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Join PHOCON 2025?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Submit your research abstract and be part of the premier National Conference Of Pediatric Infectious Diseases
+            Submit your research abstract and be part of the premier PHOCON 28th Annual Pediatric Hematology Oncology Conference
           </p>
-
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={handleAbstractSubmission}
@@ -383,13 +373,13 @@ export default function APBMTHomepage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Heart className="h-6 w-6 text-blue-400" />
-                <span className="text-lg font-bold">NCPID 2025</span>
+                <span className="text-lg font-bold">PHOCON 2025</span>
               </div>
               <p className="text-gray-400 text-sm">
-                National Conference Of Pediatric Infectious Diseases Conference
+                PHOCON 28th Annual Pediatric Hematology Oncology Conference
               </p>
             </div>
-
+            
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -399,37 +389,37 @@ export default function APBMTHomepage() {
                 <li><button className="hover:text-white transition-colors">Accommodation</button></li>
               </ul>
             </div>
-
+            
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Abstract Deadline: July 31st, 2025</li>
-                <li>Early Registration: July 7th, 2025</li>
-                <li>Conference: 10th tΟ 12th October, 2025</li>
+                <li>Abstract Deadline: September 1, 2025 (midnight 1st)</li>
+                <li>Early Registration: July 1, 2025</li>
+                <li>Conference: 29th-30th Nov, 2025</li>
               </ul>
             </div>
-
+            
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>iapidkc2022@gmail.com</span>
+                  <span>abstracts@phocon2025.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91 7349735913</span>
+                  <span>+916364690353</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Bengaluru, India</span>
+                  <span>Dr TMA Pai Halls, KMC, Manipal</span>
                 </div>
               </div>
             </div>
           </div>
-
+          
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; NCPID 2025 - National Conference Of Pediatric Infectious Diseases.</p>
+            <p>&copy; PHOCON 28th Annual Pediatric Hematology Oncology Conference.All rights reserved.</p>
             {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
