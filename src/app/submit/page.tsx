@@ -202,7 +202,7 @@ export default function SubmitAbstract() {
             <div className="text-sm text-blue-600 bg-blue-50 inline-block px-4 py-2 rounded-lg">
               📝 Submission ID: {submissionId}
             </div>
-            <div className="text-sm text-green-600 bg-green-50 inline-block px-4 py-2 rounded-lg items-center">
+            <div className="text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg flex items-center">
               <User className="h-4 w-4 mr-1" />
               Welcome, {user.name}
             </div>
