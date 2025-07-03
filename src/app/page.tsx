@@ -356,7 +356,7 @@ export default function APBMTHomepage() {
               <ArrowRight className="h-5 w-5 ml-2" />
             </button>
             <button
-              onClick={() => window.open('mailto:info@apbmt2025.org', '_blank')}
+              onClick={() => window.open('mailto:iapidkc2022@gmail.com', '_blank')}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center"
             >
               <Mail className="h-5 w-5 mr-2" />
@@ -373,10 +373,10 @@ export default function APBMTHomepage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Heart className="h-6 w-6 text-blue-400" />
-                <span className="text-lg font-bold">APBMT 2025</span>
+                <span className="text-lg font-bold">NCPID 2025</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Advancing pediatric blood and marrow transplantation research across Asia-Pacific.
+                National Conference Of Pediatric Infectious Diseases.
               </p>
             </div>
             
@@ -404,23 +404,23 @@ export default function APBMTHomepage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>info@apbmt2025.org</span>
+                  <span>iapidkc2022@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91-22-2845-1234</span>
+                  <span>+91 7349735913</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Mumbai, India</span>
+                  <span>Bengaluru, India</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 Asia-Pacific Blood and Marrow Transplantation Group. All rights reserved.</p>
-            <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p>
+            <p>&copy; National Conference Of Pediatric Infectious Diseases. All rights reserved.</p>
+            {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
       </footer>
