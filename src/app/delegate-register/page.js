@@ -265,7 +265,7 @@ export default function DelegateRegisterPage() {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label htmlFor="specialty" className="block text-sm font-medium text-gray-700 mb-1">
                   Medical Specialty *
                 </label>
@@ -288,7 +288,7 @@ export default function DelegateRegisterPage() {
                   <option value="Nursing">Nursing</option>
                   <option value="Other">Other</option>
                 </select>
-              </div>
+              </div> */}
             </div>
           </div>
 

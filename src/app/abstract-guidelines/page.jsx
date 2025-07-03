@@ -53,7 +53,7 @@ export default function AbstractGuidelines() {
             <div>
               <h3 className="font-semibold text-red-800">Important Notice</h3>
               <p className="text-red-700 text-sm">
-                Abstract submission deadline has been extended to <strong>July 7th, 2025</strong>. 
+                Abstract submission deadline has been extended to <strong>July 31st, 2025</strong>. 
                 All guidelines below must be followed for successful submission.
               </p>
             </div>
