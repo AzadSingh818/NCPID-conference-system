@@ -161,17 +161,18 @@ export default function APBMTHomepage() {
             National Conference Of Pediatric Infectious Diseases Conference
           </p>
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
-            Department of Pediatric Oncology, Kasturba Medical College, Manipal University, Manipal
+            <br>HOSTED BY - PEDIATRIC INFECTIOUS DISEASES ACADEMY [PIDA]</br>
+            <br>CO-HOSTS-IAP-ID KARNATAKA CHAPTER, IAP BENGALURU</br>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <div className="flex items-center text-blue-100">
               <Calendar className="h-5 w-5 mr-2" />
-              <span>29th - 30th Nov, 2025</span>
+              <span>10th-12th October, 2025</span>
             </div>
             <div className="flex items-center text-blue-100">
               <MapPin className="h-5 w-5 mr-2" />
-              <span>Dr TMA Pai Halls, KMC, Manipal</span>
+              <span>Bengaluru, India</span>
             </div>
             <div className="flex items-center text-blue-100">
               <Users className="h-5 w-5 mr-2" />
@@ -273,7 +274,7 @@ export default function APBMTHomepage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Conference Overview</h2>
             <p className="text-lg text-gray-600">
-              Join the PHOCON 28th Annual Pediatric Hematology Oncology Conference
+              Join National Conference Of Pediatric Infectious Diseases Conference
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
