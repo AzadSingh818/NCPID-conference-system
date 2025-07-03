@@ -9,7 +9,7 @@ const ValidatedTextArea = ({
   value = '',
   onChange,
   presentationType = 'Poster', // Default to 'Poster'
-  placeholder = 'Enter your abstract content here... (300 words maximum)',
+  placeholder = 'Enter your abstract content here... (maximum words for different category-wise)',
   label = 'Abstract Content',
   required = true,
   className = '',
@@ -143,7 +143,7 @@ const ValidatedTextArea = ({
                 </p>
                 {/* 🚀 NEW: Additional helpful message */}
                 <p className="mt-1 text-xs">
-                  💡 Tip: Focus on the most essential findings and conclusions to stay within the 250-word limit.
+                  💡 Tip: Focus on the most essential findings and conclusions to stay within the different word limit for different categories.
                 </p>
               </div>
             </div>
