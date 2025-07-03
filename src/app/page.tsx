@@ -162,11 +162,12 @@ export default function APBMTHomepage() {
               </div>
             </div> */}
             {/* NCPID Banner Image */}
+            
             <div className="w-full flex justify-center mb-6">
               <img
                 src="/ncpid-2025-banner.jpg"
                 alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
-                width={1600}
+                width={2000}
                 height={900}
                 className="object-cover rounded-lg shadow-lg"
                 style={{ width: '1600px', height: '900px', maxWidth: '100%' }}
