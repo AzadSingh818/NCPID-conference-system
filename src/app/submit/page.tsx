@@ -44,6 +44,22 @@ export default function SubmitAbstract() {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // 🚀 NEW: Word limit configuration
+  const getWordLimit = (presentationType: string) => {
+    switch (presentationType) {
+      case 'Award Paper':
+        return 1000;
+      case 'Free Paper':
+        return 250;
+      case 'Poster':
+        return 250;
+      case 'Oral':
+        return 250;
+      default:
+        return 250;
+    }
+  };
+
   // Authentication check and auto-fill user data
   useEffect(() => {
     console.log('🔍 Checking authentication...');
@@ -88,7 +104,8 @@ export default function SubmitAbstract() {
 
     // Word count validation check
     if (!wordCountValid) {
-      setMessage('❌ Please ensure your abstract meets the word limit requirements before submitting.');
+      const wordLimit = getWordLimit(formData.presentation_type);
+      setMessage(`❌ Please ensure your abstract meets the word limit requirements (${wordLimit} words for ${formData.presentation_type}) before submitting.`);
       setLoading(false);
       return;
     }
@@ -196,13 +213,13 @@ export default function SubmitAbstract() {
             📝 Submit Research Abstract
           </h1>
           <p className="text-xl text-gray-600">
-            NCPID 2025 Conference Submission
+            APBMT 2025 Conference Submission
           </p>
           <div className="mt-4 flex items-center justify-center space-x-4">
             <div className="text-sm text-blue-600 bg-blue-50 inline-block px-4 py-2 rounded-lg">
               📝 Submission ID: {submissionId}
             </div>
-            <div className="text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg flex items-center">
+            <div className="text-sm text-green-600 bg-green-50 inline-block px-4 py-2 rounded-lg flex items-center">
               <User className="h-4 w-4 mr-1" />
               Welcome, {user.name}
             </div>
@@ -215,7 +232,7 @@ export default function SubmitAbstract() {
           </button>
         </div>
 
-        {/* Guidelines Panel - UPDATED with 300 word limit */}
+        {/* Guidelines Panel - UPDATED with dynamic word limits */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center mb-4">
             <AlertCircle className="h-5 w-5 text-orange-500 mr-2" />
@@ -231,7 +248,7 @@ export default function SubmitAbstract() {
               
               <div className="flex items-start text-red-600">
                 <Clock className="h-4 w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span><strong>Deadline:</strong> July 31st, 2025 (extended)</span>
+                <span><strong>Deadline:</strong> July 10th, 2025 (extended)</span>
               </div>
               
               <div className="bg-red-50 border-l-4 border-red-400 p-3">
@@ -244,15 +261,13 @@ export default function SubmitAbstract() {
               <div className="flex items-start">
                 <FileText className="h-4 w-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                 <div>
-                  {/* 🚀 UPDATED: Changed from 250 to 300 words */}
-                  <p><strong className="text-black bg-white">Word Limit:Different for Categories (All Categories)</strong></p>
+                  {/* 🚀 UPDATED: Dynamic word limits by presentation type */}
+                  <p><strong className="text-black bg-white">Word Limits by Presentation Type:</strong></p>
                   <ul className="ml-4 mt-1 space-y-1 text-xs text-red-600 bg-white">
-                    <li>• Free Paper: 250 words</li>
-                    <li>• Poster: 250 words</li>
-                    {/* <li>• E-Poster: 300 words</li> */}
-                    <li>• Award Paper: 1000 words (Max)</li>
-                    {/* <li>• Oral Paper: 300 words</li> */}
-                    {/* <li>• Oral Presentation: 300 words</li> */}
+                    <li>• <strong>Award Paper:</strong> 1000 words</li>
+                    <li>• <strong>Free Paper:</strong> 250 words</li>
+                    <li>• <strong>Poster:</strong> 250 words</li>
+                    <li>• <strong>Oral:</strong> 250 words</li>
                   </ul>
                 </div>
               </div>
@@ -372,7 +387,7 @@ export default function SubmitAbstract() {
                 />
               </div>
 
-              {/* Presentation Type */}
+              {/* Presentation Type - 🚀 UPDATED: All options enabled with word limits shown */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Presentation Type *
@@ -384,16 +399,18 @@ export default function SubmitAbstract() {
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black bg-white"
                   disabled={loading}
                 >
-                  <option value="Free Paper">Free Paper</option>
-                  <option value="Poster">Poster Presentation</option>
-                  {/* {/* <option value="E-Poster">E-Poster</option> */}
-                  <option value="Award Paper">Award Paper</option>
-                  {/* <option value="Oral">Oral Presentation</option> */}
+                  <option value="Free Paper">Free Paper (250 words)</option>
+                  <option value="Poster">Poster Presentation (250 words)</option>
+                  <option value="Award Paper">Award Paper (1000 words)</option>
+                  <option value="Oral">Oral Presentation (250 words)</option>
                 </select>
+                <p className="mt-1 text-xs text-gray-500">
+                  Current selection: {formData.presentation_type} - {getWordLimit(formData.presentation_type)} words maximum
+                </p>
               </div>
 
               {/* 🚀 NEW: Category Field (as requested in DOCX) */}
-              {/* <div>
+              <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Category *
                 </label>
@@ -413,7 +430,7 @@ export default function SubmitAbstract() {
                 <p className="mt-1 text-xs text-gray-500">
                   Select the primary medical category for your research
                 </p>
-              </div> */}
+              </div>
 
               {/* Co-Authors */}
               <div className="md:col-span-2">
@@ -431,7 +448,7 @@ export default function SubmitAbstract() {
               </div>
             </div>
 
-            {/* Abstract Content with category-wise Word Validation */}
+            {/* Abstract Content with Dynamic Word Validation */}
             <div className="space-y-4 text-black bg-white">
               <ValidatedTextArea
                 value={formData.abstract_content}
@@ -440,7 +457,7 @@ export default function SubmitAbstract() {
                 onValidationChange={handleWordCountValidation}
                 disabled={loading}
                 required={true}
-                placeholder="Enter your complete abstract here... (maximum words for category-wise)"
+                placeholder={`Enter your complete abstract here... (${getWordLimit(formData.presentation_type)} words maximum for ${formData.presentation_type})`}
               />
             </div>
 
@@ -485,7 +502,7 @@ export default function SubmitAbstract() {
               
               {!wordCountValid && (
                 <p className="text-sm text-red-600 text-center mt-2">
-                  Please ensure your abstract meets word limit requirements (maximum words for category-wise)
+                  Please ensure your abstract meets word limit requirements ({getWordLimit(formData.presentation_type)} words maximum for {formData.presentation_type})
                 </p>
               )}
             </div>
@@ -493,11 +510,11 @@ export default function SubmitAbstract() {
         </div>
 
         {/* System Info */}
-        {/* <div className="mt-6 text-center text-gray-500">
+        <div className="mt-6 text-center text-gray-500">
           <p>🚀 APBMT Abstract Submission System v2.0</p>
           <p>⚡ Built with Next.js 15 + PRD Compliant Implementation</p>
-          <p className="text-xs mt-1">🔄 Word Limit: 300 words • Category Support: Enabled</p>
-        </div> */}
+          <p className="text-xs mt-1">🔄 Dynamic Word Limits: Award Paper (1000) • Free Paper/Poster/Oral (250) • Category Support: Enabled</p>
+        </div>
       </div>
     </div>
   );
