@@ -341,9 +341,9 @@ export default function APBMTHomepage() {
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Join APBMT 2025?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Join NCPID 2025?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Submit your research abstract and be part of the premier pediatric BMT conference
+            National Conference Of Pediatric Infectious Diseases
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -356,7 +356,7 @@ export default function APBMTHomepage() {
               <ArrowRight className="h-5 w-5 ml-2" />
             </button>
             <button
-              onClick={() => window.open('mailto:info@apbmt2025.org', '_blank')}
+              onClick={() => window.open('mailto:iapidkc2022@gmail.com', '_blank')}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center"
             >
               <Mail className="h-5 w-5 mr-2" />
@@ -373,10 +373,10 @@ export default function APBMTHomepage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Heart className="h-6 w-6 text-blue-400" />
-                <span className="text-lg font-bold">APBMT 2025</span>
+                <span className="text-lg font-bold">NCPID 2025</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Advancing pediatric blood and marrow transplantation research across Asia-Pacific.
+                National Conference Of Pediatric Infectious Diseases.
               </p>
             </div>
             
@@ -393,9 +393,9 @@ export default function APBMTHomepage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Abstract Deadline: July 10, 2025</li>
+                <li>Abstract Deadline: July 7th, 2025</li>
                 <li>Early Registration: Aug 15, 2025</li>
-                <li>Conference: March 15-17, 2025</li>
+                <li>Conference: 10th to 12th October, 2025</li>
               </ul>
             </div>
             
@@ -404,23 +404,23 @@ export default function APBMTHomepage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>info@apbmt2025.org</span>
+                  <span>iapidkc2022@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91-22-2845-1234</span>
+                  <span>+91 7349735913</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Mumbai, India</span>
+                  <span>Bengaluru, India</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 Asia-Pacific Blood and Marrow Transplantation Group. All rights reserved.</p>
-            <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p>
+            <p>&copy; 2025 National Conference Of Pediatric Infectious Diseases. All rights reserved.</p>
+            {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
           </div>
         </div>
       </footer>
