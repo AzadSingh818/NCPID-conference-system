@@ -38,13 +38,13 @@ export const WORD_LIMITS = {
    * 🚀 UPDATED: Default limit changed to 300
    */
   export const getWordLimit = (presentationType) => {
-    if (!presentationType) return 300; // UPDATED: Default limit 300
+    if (!presentationType) return 250; // UPDATED: Default limit 300
     
     // Normalize presentation type
     const normalizedType = presentationType.toString().trim();
     
     // 🚀 UPDATED: Return 300 for all types, fallback to 300
-    return WORD_LIMITS[normalizedType] || 300;
+    return WORD_LIMITS[normalizedType] || 250;
   };
   
   /**
