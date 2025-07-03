@@ -213,7 +213,7 @@ export default function SubmitAbstract() {
             📝 Submit Research Abstract
           </h1>
           <p className="text-xl text-gray-600">
-            APBMT 2025 Conference Submission
+            NCPID 2025 Conference Submission
           </p>
           <div className="mt-4 flex items-center justify-center space-x-4">
             <div className="text-sm text-blue-600 bg-blue-50 inline-block px-4 py-2 rounded-lg">
@@ -248,7 +248,7 @@ export default function SubmitAbstract() {
               
               <div className="flex items-start text-red-600">
                 <Clock className="h-4 w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span><strong>Deadline:</strong> July 10th, 2025 (extended)</span>
+                <span><strong>Deadline:</strong> July 31st, 2025 (extended)</span>
               </div>
               
               <div className="bg-red-50 border-l-4 border-red-400 p-3">
@@ -267,7 +267,7 @@ export default function SubmitAbstract() {
                     <li>• <strong>Award Paper:</strong> 1000 words</li>
                     <li>• <strong>Free Paper:</strong> 250 words</li>
                     <li>• <strong>Poster:</strong> 250 words</li>
-                    <li>• <strong>Oral:</strong> 250 words</li>
+                    {/* <li>• <strong>Oral:</strong> 250 words</li> */}
                   </ul>
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function SubmitAbstract() {
               <div className="bg-blue-50 p-3 rounded">
                 <p className="font-medium text-blue-800">Time Allocation:</p>
                 <p className="text-blue-700 text-xs">
-                  Oral: 6+2 min | Poster: 5+2 min
+                  6+2 min | Poster: 5+2 min
                 </p>
               </div>
             </div>
@@ -402,7 +402,7 @@ export default function SubmitAbstract() {
                   <option value="Free Paper">Free Paper (250 words)</option>
                   <option value="Poster">Poster Presentation (250 words)</option>
                   <option value="Award Paper">Award Paper (1000 words)</option>
-                  <option value="Oral">Oral Presentation (250 words)</option>
+                  {/* <option value="Oral">Oral Presentation (250 words)</option> */}
                 </select>
                 <p className="mt-1 text-xs text-gray-500">
                   Current selection: {formData.presentation_type} - {getWordLimit(formData.presentation_type)} words maximum
@@ -410,7 +410,7 @@ export default function SubmitAbstract() {
               </div>
 
               {/* 🚀 NEW: Category Field (as requested in DOCX) */}
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Category *
                 </label>
@@ -430,7 +430,7 @@ export default function SubmitAbstract() {
                 <p className="mt-1 text-xs text-gray-500">
                   Select the primary medical category for your research
                 </p>
-              </div>
+              </div> */}
 
               {/* Co-Authors */}
               <div className="md:col-span-2">
@@ -510,11 +510,11 @@ export default function SubmitAbstract() {
         </div>
 
         {/* System Info */}
-        <div className="mt-6 text-center text-gray-500">
+        {/* <div className="mt-6 text-center text-gray-500">
           <p>🚀 APBMT Abstract Submission System v2.0</p>
           <p>⚡ Built with Next.js 15 + PRD Compliant Implementation</p>
           <p className="text-xs mt-1">🔄 Dynamic Word Limits: Award Paper (1000) • Free Paper/Poster/Oral (250) • Category Support: Enabled</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
