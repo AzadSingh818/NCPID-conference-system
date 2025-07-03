@@ -393,7 +393,7 @@ export default function SubmitAbstract() {
               </div>
 
               {/* 🚀 NEW: Category Field (as requested in DOCX) */}
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Category *
                 </label>
@@ -413,7 +413,7 @@ export default function SubmitAbstract() {
                 <p className="mt-1 text-xs text-gray-500">
                   Select the primary medical category for your research
                 </p>
-              </div>
+              </div> */}
 
               {/* Co-Authors */}
               <div className="md:col-span-2">
