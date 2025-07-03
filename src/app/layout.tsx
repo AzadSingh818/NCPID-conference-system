@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "APBMT 2025 Conference Management System",
-  description: "Abstract submission and management system for APBMT 2025 Conference",
+  title: "NCPID 2025 Conference",
+  description: "Abstract submission and management system for NCPID 2025 Conference",
 };
 
 export default function RootLayout({
