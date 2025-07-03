@@ -170,7 +170,7 @@ export default function APBMTHomepage() {
                 width={2000}
                 height={900}
                 className="object-cover rounded-lg shadow-lg"
-                style={{ width: '1600px', height: '900px', maxWidth: '100%' }}
+                style={{ width: '2000px', height: '900px', maxWidth: '100%' }}
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
