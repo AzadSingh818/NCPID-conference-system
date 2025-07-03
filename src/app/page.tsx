@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Calendar, MapPin, Users, Award, FileText, Clock, 
-  CheckCircle, ArrowRight, Mail, Phone, Globe, 
+import {
+  Calendar, MapPin, Users, Award, FileText, Clock,
+  CheckCircle, ArrowRight, Mail, Phone, Globe,
   Building, Heart, Microscope, User, UserPlus,
   Download, ExternalLink, Bell, Star, Target,
   Stethoscope, Activity, Brain, Shield
@@ -46,9 +46,9 @@ export default function APBMTHomepage() {
     //   icon: Microscope,
     //   description: 'Original research presentations with discussion'
     // },
-    { 
-      title: 'Poster Presentation', 
-      duration: 'Display', 
+    {
+      title: 'Poster Presentation',
+      duration: 'Display',
       wordLimit: '300 words',
       icon: FileText,
       description: 'Visual presentation of research findings'
@@ -60,9 +60,9 @@ export default function APBMTHomepage() {
     //   icon: Activity,
     //   description: 'Electronic poster with presentation slot'
     // },
-    { 
-      title: 'Oral Presentation', 
-      duration: '8+2 minutes', 
+    {
+      title: 'Oral Presentation',
+      duration: '8+2 minutes',
       wordLimit: '300 words',
       icon: Activity,
       description: 'Competitive presentations for Oral session'
@@ -90,27 +90,27 @@ export default function APBMTHomepage() {
                 <p className="text-xs text-gray-500">National Conference of Pediatric Infectious Diseases</p>
               </div>
             </div>
-            
+
             <nav className="hidden md:flex space-x-8">
-              <button 
+              <button
                 onClick={() => setActiveTab('overview')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'overview' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Overview
               </button>
-              <button 
+              <button
                 onClick={() => setActiveTab('program')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'program' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Program
               </button>
-              <button 
+              <button
                 onClick={() => setActiveTab('speakers')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'speakers' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 Faculty
               </button>
-              <button 
+              <button
                 onClick={() => setActiveTab('registration')}
                 className={`text-sm font-medium transition-colors ${activeTab === 'registration' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
               >
@@ -138,25 +138,16 @@ export default function APBMTHomepage() {
 
       {/* Hero Section with NCPID Banner */}
       <section className="bg-white">
-        {/* NCPID Banner Image */}
-        {/* <div className="w-full">
-          <img 
-            src="/ncpid-2025-banner.jpg" 
-            alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
-            className="w-full h-auto object-cover"
-            style={{ maxHeight: '0px' }}
-          />
-        </div> */}
-        
+
         {/* Content Below Banner */}
         <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white py-12">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
+            {/* <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-2 mb-6">
               <Bell className="h-4 w-4 mr-2" />
               <span className="text-sm font-medium">Abstract Submission Extended to July 31st, 2025</span>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            </div> */}
+
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <div className="flex items-center text-blue-100">
                 <Calendar className="h-5 w-5 mr-2" />
                 <span>10th to 12th October, 2025</span>
@@ -169,8 +160,18 @@ export default function APBMTHomepage() {
                 <Users className="h-5 w-5 mr-2" />
                 <span>500+ Expected Attendees</span>
               </div>
+            </div> */}
+            {/* NCPID Banner Image */}
+            <div className="w-full flex justify-center mb-6">
+              <img
+                src="/ncpid-2025-banner.jpg"
+                alt="NCPID 2025 - National Conference of Pediatric Infectious Diseases"
+                width={1600}
+                height={900}
+                className="object-cover rounded-lg shadow-lg"
+                style={{ width: '1600px', height: '900px', maxWidth: '100%' }}
+              />
             </div>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleAbstractSubmission}
@@ -300,12 +301,11 @@ export default function APBMTHomepage() {
                       <div className="font-medium text-gray-900">{date.event}</div>
                       <div className="text-sm text-gray-600">{date.date}</div>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      date.status === 'extended' ? 'bg-red-100 text-red-700' :
-                      date.status === 'open' ? 'bg-green-100 text-green-700' :
-                      date.status === 'upcoming' ? 'bg-blue-100 text-blue-700' :
-                      'bg-purple-100 text-purple-700'
-                    }`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${date.status === 'extended' ? 'bg-red-100 text-red-700' :
+                        date.status === 'open' ? 'bg-green-100 text-green-700' :
+                          date.status === 'upcoming' ? 'bg-blue-100 text-blue-700' :
+                            'bg-purple-100 text-purple-700'
+                      }`}>
                       {date.status.charAt(0).toUpperCase() + date.status.slice(1)}
                     </span>
                   </div>
@@ -348,7 +348,7 @@ export default function APBMTHomepage() {
           <p className="text-xl text-blue-100 mb-8">
             Submit your research abstract and be part of the National Conference of Pediatric Infectious Diseases
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={handleAbstractSubmission}
@@ -382,7 +382,7 @@ export default function APBMTHomepage() {
                 National Conference of Pediatric Infectious Diseases
               </p>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -392,7 +392,7 @@ export default function APBMTHomepage() {
                 <li><button className="hover:text-white transition-colors">Accommodation</button></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -401,7 +401,7 @@ export default function APBMTHomepage() {
                 <li>Conference: 10th-12th Oct, 2025</li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-sm text-gray-400">
@@ -420,7 +420,7 @@ export default function APBMTHomepage() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>&copy; National Conference of Pediatric Infectious Diseases. All rights reserved.</p>
             {/* <p className="mt-2">🚀 Built with Next.js 15 + Turbopack + TypeScript + Tailwind CSS</p> */}
